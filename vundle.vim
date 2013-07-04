@@ -1,16 +1,20 @@
- set nocompatible               " be iMproved
- filetype off                   " required!
+" ====================
+" Vundle Configuration
+" ====================
 
- set rtp+=~/.vim/bundle/vundle/
- call vundle#rc()
+set nocompatible               " be iMproved
+filetype off                   " required!
 
- " let Vundle manage Vundle
- " required!
- Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
- " --------------
- " Plugin Bundles
- " --------------
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" --------------
+" Plugin Bundles
+" --------------
 
 " UI Additions
 Bundle 'Lokaltog/vim-powerline'
@@ -24,12 +28,12 @@ Bundle 'maelstrom/linters.vim'
 " Latex
 Bundle 'jcf/vim-latex'
 
- "
- " Brief help
- " :BundleList          - list configured bundles
- " :BundleInstall(!)    - install(update) bundles
- " :BundleSearch(!) foo - search(or refresh cache first) for foo
- " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
- "
- " see :h vundle for more details or wiki for FAQ
- " NOTE: comments after Bundle command are not allowed..
+"
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..

@@ -5,6 +5,9 @@ source ~/.vim/vundle.vim
 " Automatically detect file types. (must turn on after Vundle)
 filetype plugin indent on
 
+" Plugin configuration files.
+source ~/.vim/plugin_config.vim
+
 " Swap terminal title
 set title
 
@@ -128,63 +131,3 @@ set smartcase
 set nobackup
 set nowritebackup
 set noswapfile
-
-" ================
-" Python IDE Setup
-" ================
-
-" ---------------
-" NERDTree
-" ---------------
-nnoremap <leader>nn :NERDTreeToggle<CR>
-nnoremap <leader>nf :NERDTreeFind<CR>
-let g:NERDTreeShowBookmarks = 1
-let g:NERDTreeChDirMode = 2 " Change the NERDTree directory to the root node
-let g:NERDTreeMinimalUI = 1
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType")
-  \&& b:NERDTreeType == "primary") | q | endif
-
-" Settings for vim-powerline
-" cd ~/.vim/bundle
-" git clone git://github.com/Lokaltog/vim-powerline.git
-set laststatus=2
-
-
-" Settings for ctrlp
-" cd ~/.vim/bundle
-" git clone https://github.com/kien/ctrlp.vim.git
-" Ensure Ctrl-P isn't bound by default
-let g:ctrlp_map = ''
-
-" Ensure max height isn't too large. (for performance)
-let g:ctrlp_max_height = 10
-let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
-set wildignore+=*.pyc
-set wildignore+=*_build/*
-set wildignore+=*/coverage/*
-
-
-" Settings for jedi-vim
-" pip install jedi
-" cd ~/.vim/bundle
-" git clone git://github.com/davidhalter/jedi-vim.git
-let g:jedi#related_names_command = "<leader>z"
-let g:jedi#popup_on_dot = 0
-let g:jedi#popup_select_first = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-
-
-" Settings for supertap
-" cd ~/.vim/bundle
-" git clone git://github.com/ervandew/supertab.git
-let g:SuperTabDefaultCompletionType = "context"
-
-
-" =============
-" Latex Settings
-" =============
-
-" Vim-Latex
-" git clone https://github.com/jcf/vim-latex.git
-let g:Tex_DefaultTargetFormat = 'pdf'
-
