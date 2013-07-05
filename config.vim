@@ -8,9 +8,7 @@
 set background=dark
 colorscheme jellybeans
 " Force 256 color mode if available
-if $TERM =~ "-256color"
-   set t_Co=256
-endif
+set t_Co=256
 
 " --------
 " Spelling
@@ -25,7 +23,6 @@ set guioptions-=m   " Remove menu bar
 set guioptions-=T   " Remove tool bar
 set guioptions-=r   " Remove right-hand scroll bar
 set encoding=utf-8
-set laststatus=2    " Always show the statusline
 set cmdheight=2     " Make the command area two lines high
 set noshowmode      " Don't show the mode since Powerline shows it
 set ruler           " Ruler on
