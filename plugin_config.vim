@@ -9,18 +9,6 @@ set nocompatible
 set laststatus=2
 let g:Powerline_symbols = 'fancy'
 
-" -----
-" ctrlp
-" -----
-" Ensure Ctrl-P isn't bound by default
-let g:ctrlp_map = ''
-" Ensure max height isn't too large. (for performance)
-let g:ctrlp_max_height = 10
-let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
-set wildignore+=*.pyc
-set wildignore+=*_build/*
-set wildignore+=*/coverage/*
-
 " --------
 " NERDTree
 " --------
@@ -32,10 +20,39 @@ let g:NERDTreeMinimalUI = 1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType")
   \&& b:NERDTreeType == "primary") | q | endif
 
+" ---------------
+" Fugitive
+" ---------------
+nnoremap <Leader>gc :Gcommit -v<CR>
+nnoremap <Leader>gw :Gwrite<CR>
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gp :Git push<CR>
+ " Mnemonic, gu = Git Update
+nnoremap <Leader>gu :Git pull<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+" Exit a diff by closing the diff window
+nnoremap <Leader>gx :wincmd h<CR>:q<CR>
+" Start git command
+nnoremap <leader>gi :Git<space>
+" Undo the last commit
+command! Gcundo :Git reset HEAD~1
+
 " --------
 " supertab
 " --------
 let g:SuperTabDefaultCompletionType = "context"
+
+" -----
+" ctrlp
+" -----
+" Ensure Ctrl-P isn't bound by default
+let g:ctrlp_map = ''
+" Ensure max height isn't too large. (for performance)
+let g:ctrlp_max_height = 10
+let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=*/coverage/*
 
 " --------
 " jedi-vim

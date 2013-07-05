@@ -18,10 +18,13 @@ Bundle 'gmarik/vundle'
 
 " UI Additions
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'nanotech/jellybeans.vim'
+" Commands
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-fugitive'
 Bundle 'ervandew/supertab'
+Bundle 'kien/ctrlp.vim'
 " Python
 Bundle 'davidhalter/jedi-vim'
 Bundle 'maelstrom/linters.vim'
