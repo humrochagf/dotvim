@@ -19,9 +19,7 @@ set spelllang=pt
 " UI
 " --
 set title           " swap terminal title
-set guioptions-=m   " Remove menu bar
-set guioptions-=T   " Remove tool bar
-set guioptions-=r   " Remove right-hand scroll bar
+set guioptions=agih
 set encoding=utf-8
 set cmdheight=2     " Make the command area two lines high
 set noshowmode      " Don't show the mode since Powerline shows it
