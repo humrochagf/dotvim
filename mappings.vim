@@ -48,46 +48,10 @@ nmap Q gqap
 " ---------------
 " Window Movement
 " ---------------
-
-" Here's a visual guide for moving between window splits.
-"   4 Window Splits
-"   --------
-"   g1 | g2
-"   ---|----
-"   g3 | g4
-"   -------
-"
-"   6 Window Splits
-"   -------------
-"   g1 | gt | g2
-"   ---|----|----
-"   g3 | gb | g4
-"   -------------
-nnoremap <silent> gh :wincmd h<CR>
-nnoremap <silent> gj :wincmd j<CR>
-nnoremap <silent> gk :wincmd k<CR>
-nnoremap <silent> gl :wincmd l<CR>
-" Upper left window
-nnoremap <silent> g1 :wincmd t<CR>
-" Upper right window
-nnoremap <silent> g2 :wincmd b<Bar>:wincmd k<CR>
-" Lower left window
-nnoremap <silent> g3 :wincmd t<Bar>:wincmd j<CR>
-" Lower right window
-nnoremap <silent> g4 :wincmd b<CR>
-
-" Top Middle
-nnoremap <silent> gt g2<Bar>:wincmd h<CR>
-" Bottom Middle
-nnoremap <silent> gb g3<Bar>:wincmd l<CR>
-
-" Previous Window
-nnoremap <silent> gp :wincmd p<CR>
-" Equal Size Windows
-nnoremap <silent> g= :wincmd =<CR>
-" Swap Windows
-nnoremap <silent> gx :wincmd x<CR>
-
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " ---------------
 " Leader Mappings
