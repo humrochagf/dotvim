@@ -6,7 +6,7 @@
 " Color
 " -----
 set background=dark
-colorscheme jellybeans
+colorscheme solarized
 " Force 256 color mode if available
 set t_Co=256
 
