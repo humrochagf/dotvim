@@ -13,9 +13,9 @@ This is my .vim folder working with [Vundle](https://github.com/gmarik/vundle).
 
 ## Plugin List
 
-* [vim-powerline](https://github.com/Lokaltog/vim-powerline) - The ultimate vim statusline utility. DEPRECATED in favor of Lokaltog/powerline.
+* [powerline](https://github.com/Lokaltog/powerline) - The ultimate statusline/prompt utility.
 * [nerdtree](https://github.com/scrooloose/nerdtree) - A tree explorer plugin for vim.
-* [jellybeans.vim](https://github.com/nanotech/jellybeans.vim) - A colorful, dark color scheme for Vim.
+* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) - A precision colorscheme for the vim text editor.
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Vim plugin for easy commenting.
 * [vim-fugitive](https://github.com/tpope/vim-fugitive) - A Git wrapper.
 * [supertab](https://github.com/ervandew/supertab) - Perform all your vim insert mode completions with Tab.
