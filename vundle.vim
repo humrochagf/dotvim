@@ -17,7 +17,7 @@ Bundle 'gmarik/vundle'
 " --------------
 
 " UI Additions
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/powerline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 " Commands
