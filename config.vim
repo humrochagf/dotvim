@@ -87,6 +87,7 @@ set matchtime=2     " How many tenths of a second to blink
 set list
 " Reset listchars
 set listchars=""
+set listchars+=tab:\|-
 " Show trailing spaces as dots
 set listchars+=trail:.
 " The character to show in the last column when wrap is off and the line
