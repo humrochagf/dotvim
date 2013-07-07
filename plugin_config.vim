@@ -5,6 +5,7 @@
 " -------------
 " vim-powerline
 " -------------
+set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim/
 set laststatus=2
 
 " --------
