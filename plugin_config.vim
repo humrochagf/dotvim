@@ -5,9 +5,7 @@
 " -------------
 " vim-powerline
 " -------------
-set nocompatible
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
 
 " --------
 " NERDTree
@@ -19,6 +17,15 @@ let g:NERDTreeChDirMode = 2 " Change the NERDTree directory to the root node
 let g:NERDTreeMinimalUI = 1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType")
   \&& b:NERDTreeType == "primary") | q | endif
+
+" ---------
+" solarized
+" ---------
+if !has("gui_running")
+    let g:solarized_termtrans=0
+else
+    let g:solarized_termtrans=1
+endif
 
 " ---------------
 " Fugitive

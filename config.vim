@@ -7,20 +7,17 @@
 " -----
 set background=dark
 colorscheme solarized
-" Force 256 color mode if available
-set t_Co=256
 
-" --------
-" Spelling
-" --------
-set spelllang=pt
+" ---------------------------
+" Encoding and Spell Checking
+" ---------------------------
+set encoding=utf-8
+set spelllang=pt,en
 
 " --
 " UI
 " --
 set title           " swap terminal title
-set guioptions=agih
-set encoding=utf-8
 set cmdheight=2     " Make the command area two lines high
 set noshowmode      " Don't show the mode since Powerline shows it
 set ruler           " Ruler on
@@ -29,7 +26,20 @@ set tw=79           " Width of document (used by gd)
 set nowrap          " Don't automatically wrap on load
 set fo-=t           " Don't automatically wrap text when typing
 set colorcolumn=80  " Color the 80th column differently as a wrapping guide.
-highlight ColorColumn ctermbg=233
+" GVim configuration
+if has("gui_running")
+    set guioptions-=T " hide tool bar
+    set guioptions-=m " hide menu bar
+    set guioptions+=b
+    set guifont=Inconsolata\ 13
+
+" be cooler while using the cli version of VIM
+else
+    set t_Co=256
+
+" seems like this makes the window smoother in the cli version
+    set ttyfast
+endif
 
 " ---------
 " Behaviors
