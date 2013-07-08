@@ -30,7 +30,8 @@ set colorcolumn=80  " Color the 80th column differently as a wrapping guide.
 if has("gui_running")
     set guioptions-=T " hide tool bar
     set guioptions-=m " hide menu bar
-    set guioptions+=b
+    set guioptions-=r " hide right scrollbar
+    set guioptions-=b " hide bottom scrollbar
     set guifont=Inconsolata\ 13
 
 " be cooler while using the cli version of VIM
