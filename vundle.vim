@@ -28,8 +28,6 @@ Bundle 'kien/ctrlp.vim'
 " Python
 Bundle 'davidhalter/jedi-vim'
 Bundle 'maelstrom/linters.vim'
-" Latex
-Bundle 'jcf/vim-latex'
 
 "
 " Brief help
