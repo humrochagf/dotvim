@@ -25,13 +25,14 @@ set tw=79           " Width of document (used by gd)
 set nowrap          " Don't automatically wrap on load
 set fo-=t           " Don't automatically wrap text when typing
 set colorcolumn=80  " Color the 80th column differently as a wrapping guide.
+
 " GVim configuration
 if has("gui_running")
     set guioptions-=T " hide tool bar
     set guioptions-=m " hide menu bar
     set guioptions-=r " hide right scrollbar
     set guioptions-=b " hide bottom scrollbar
-    set guifont=Inconsolata\ 13
+    set guifont=Inconsolata-dz\ for\ Powerline\ 11
 
 " be cooler while using the cli version of VIM
 else

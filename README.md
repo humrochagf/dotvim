@@ -15,7 +15,7 @@ This is my .vim folder working with [Vundle](https://github.com/gmarik/vundle).
 
 * [powerline](https://github.com/Lokaltog/powerline) - The ultimate statusline/prompt utility.
 * [nerdtree](https://github.com/scrooloose/nerdtree) - A tree explorer plugin for vim.
-* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized) - A precision colorscheme for the vim text editor.
+* [vim-irblack](https://github.com/wesgibbs/vim-irblack) - My favorite theme for vim.
 * [nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Vim plugin for easy commenting.
 * [vim-fugitive](https://github.com/tpope/vim-fugitive) - A Git wrapper.
 * [supertab](https://github.com/ervandew/supertab) - Perform all your vim insert mode completions with Tab.
@@ -26,7 +26,7 @@ This is my .vim folder working with [Vundle](https://github.com/gmarik/vundle).
 
 ## Plugin Installation / Requirements
 
+* [powerline](https://github.com/Lokaltog/powerline) Requires you to install a custom font of your choice wich the process is described on their docs.
 * [Fugitive](https://github.com/tpope/vim-fugitive) Requires Git to be installed.
 * [jedi-vim](https://github.com/davidhalter/jedi-vim) Requires jedi python package.
 * [linters.vim](https://github.com/maelstrom/linters.vim) Requires the linter applications to work, right now I am only using with pep8 python package.
-* [vim-latex](https://github.com/jcf/vim-latex) Requires latex package and works fine with texlive and latexmk packages.
