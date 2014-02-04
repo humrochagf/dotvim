@@ -19,7 +19,7 @@ Bundle 'gmarik/vundle'
 " UI Additions
 Bundle 'Lokaltog/powerline'
 Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'wesgibbs/vim-irblack'
 " Commands
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-fugitive'

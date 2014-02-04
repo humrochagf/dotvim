@@ -6,8 +6,7 @@
 " Color
 " -----
 set background=dark
-colorscheme solarized
-
+colorscheme ir_black
 " ---------------------------
 " Encoding and Spell Checking
 " ---------------------------
