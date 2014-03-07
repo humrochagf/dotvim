@@ -22,7 +22,6 @@ This is my .vim folder working with [Vundle](https://github.com/gmarik/vundle).
 * [ctrlp.vim](https://github.com/kien/ctrlp.vim) - Fuzzy file, buffer, mru, tag, etc finder.
 * [jedi-vim](https://github.com/davidhalter/jedi-vim) - A VIM binding to the awesome autocompletion library Jedi.
 * [linters.vim](https://github.com/maelstrom/linters.vim) - Check your code for lint as you write.
-* [vim-latex](https://github.com/jcf/vim-latex) - Plugin for making your latex life easy.
 
 ## Plugin Installation / Requirements
 

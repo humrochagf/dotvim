@@ -32,8 +32,7 @@ if has("gui_running")
     set guioptions-=m " hide menu bar
     set guioptions-=r " hide right scrollbar
     set guioptions-=b " hide bottom scrollbar
-    set guifont=Inconsolata-dz\ for\ Powerline\ 11
-
+    set guifont=Inconsolata-dz\ for\ Powerline
 " be cooler while using the cli version of VIM
 else
     set t_Co=256
