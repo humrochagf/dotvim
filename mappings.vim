@@ -58,7 +58,7 @@ nnoremap <C-l> <C-w>l
 " ---------------
 
 " Toggle spelling mode with ,s
-nnoremap <silent> <leader>s :set spell!<CR>
+nnoremap <silent> <leader>ss :set spell!<CR>
 
 " Quicksave command
 noremap <Leader>w :update<CR>
@@ -72,8 +72,11 @@ map <Leader>l <esc>:tabnext<CR>
 
 " map sort function to a key
 " awesome on ordering imports on python
-vnoremap <Leader>s :sort<CR>
+vnoremap <Leader>ss :sort<CR>
 
 " Improved copy/paste
 noremap <Leader>y "+y
 noremap <Leader>p "+p
+
+" remove trailing whitespaces
+map <Leader>sd :%s/\s\+$//<CR>
