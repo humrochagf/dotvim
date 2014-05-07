@@ -26,6 +26,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'maelstrom/linters.vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'gerw/vim-latex-suite'
 
 "
 " Brief help
