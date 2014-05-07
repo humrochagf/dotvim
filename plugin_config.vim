@@ -62,15 +62,8 @@ set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
 
-" --------
-" jedi-vim
-" --------
-let g:jedi#related_names_command = "<leader>z"
-let g:jedi#popup_on_dot = 0
-let g:jedi#popup_select_first = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-
-" ---------
-" Vim-Latex
-" ---------
-let g:Tex_DefaultTargetFormat = 'pdf'
+" -------------
+" YouCompleteMe
+" -------------
+let g:ycm_autoclose_preview_window_after_completion=1
+nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>

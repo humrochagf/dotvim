@@ -23,11 +23,9 @@ Bundle 'wesgibbs/vim-irblack'
 " Commands
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-fugitive'
-Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
-" Python
-Bundle 'davidhalter/jedi-vim'
 Bundle 'maelstrom/linters.vim'
+Bundle 'Valloric/YouCompleteMe'
 
 "
 " Brief help
