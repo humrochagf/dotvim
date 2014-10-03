@@ -17,7 +17,7 @@ Bundle 'gmarik/vundle'
 " --------------
 
 " UI Additions
-Bundle 'Lokaltog/powerline'
+Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'wesgibbs/vim-irblack'
 " Commands
@@ -25,8 +25,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'maelstrom/linters.vim'
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'gerw/vim-latex-suite'
+Bundle 'davidhalter/jedi-vim'
 
 "
 " Brief help

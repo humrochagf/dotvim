@@ -3,10 +3,10 @@
 " ====================
 
 " -------------
-" vim-powerline
+" vim-airline
 " -------------
-set rtp+=$HOME/.vim/bundle/powerline/powerline/bindings/vim/
 set laststatus=2
+let g:airline_powerline_fonts = 1
 
 " --------
 " NERDTree
@@ -18,15 +18,6 @@ let g:NERDTreeChDirMode = 2 " Change the NERDTree directory to the root node
 let g:NERDTreeMinimalUI = 1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType")
   \&& b:NERDTreeType == "primary") | q | endif
-
-" ---------
-" solarized
-" ---------
-if !has("gui_running")
-    let g:solarized_termtrans=0
-else
-    let g:solarized_termtrans=1
-endif
 
 " ---------------
 " Fugitive
@@ -61,12 +52,6 @@ let g:ctrlp_match_func = {'match' : 'matcher#cmatch' }
 set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
-
-" -------------
-" YouCompleteMe
-" -------------
-let g:ycm_autoclose_preview_window_after_completion=1
-nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " -----------
 " latex-suite
