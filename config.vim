@@ -3,6 +3,7 @@
 " =========================
 
 " General {
+
     filetype plugin indent on   " Automatically detect file types.
     syntax on                   " Syntax highlighting
     set mouse=a                 " Automatically enable mouse usage
@@ -35,20 +36,15 @@
     " Instead of reverting the cursor to the last position in the buffer, we
     " set it to the first line when editing a git commit message
     au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
+
 " }
 
 " UI {
+
     set background=dark
     colorscheme ir_black
-    set colorcolumn=80  " Color the 80th column differently as a wrapping guide.
 
-    if has("gui_running")
-        set guioptions-=T " hide tool bar
-        set guioptions-=m " hide menu bar
-        set guioptions-=r " hide right scrollbar
-        set guioptions-=b " hide bottom scrollbar
-        set guifont=Inconsolata-dz\ for\ Powerline\ 11
-    endif
+    set colorcolumn=80  " Color the 80th column differently as a wrapping guide.
 
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
@@ -102,9 +98,35 @@
     " The character to show in the last column when wrap is off and the line
     " continues beyond the right of the screen
     set listchars+=precedes:<
+
+" }
+
+" GUI Settings {
+
+    " GVIM- (here instead of .gvimrc)
+    if has('gui_running')
+        set guioptions-=T           " Remove the toolbar
+        set lines=40                " 40 lines of text instead of 24
+        if !exists("g:spf13_no_big_font")
+            if LINUX() && has("gui_running")
+                set guifont=Inconsolata-dz\ for\ Powerline:h11,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 11,Consolas\ Regular\ 12,Courier\ New\ Regular\ 14
+            elseif OSX() && has("gui_running")
+                set guifont=Inconsolata-dz\ for\ Powerline:h11,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
+            elseif WINDOWS() && has("gui_running")
+                set guifont=Inconsolata-dz\ for\ Powerline:h11,Andale_Mono:h11,Menlo:h11,Consolas:h11,Courier_New:h11
+            endif
+        endif
+    else
+        if &term == 'xterm' || &term == 'screen'
+            set t_Co=256            " Enable 256 colors to stop the CSApprox warning and make xterm vim shine
+        endif
+        "set term=builtin_ansi       " Make arrow and other keys work
+    endif
+
 " }
 
 " Formatting {
+
     set nowrap                      " Do not wrap long lines
     set autoindent                  " Indent at the same level of the previous line
     set shiftwidth=4                " Use indents of 4 spaces
@@ -127,4 +149,5 @@
     autocmd FileType haskell setlocal commentstring=--\ %s
     " Workaround broken colour highlighting in Haskell
     autocmd FileType haskell,rust setlocal nospell
+
 " }

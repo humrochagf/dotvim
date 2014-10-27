@@ -1,12 +1,16 @@
 " ========
 " Mappings
 " ========
+
 " Leader Key {
+
     " Note: This line MUST come before any <leader> mappings
     let mapleader=","
+
 " }
 
 " Base Mappings {
+
     " Remapping esc
     imap jj <esc>
 
@@ -41,16 +45,20 @@
     " Easier horizontal scrolling
     map zl zL
     map zh zH
+
 " }
 
 " Window Movement {
+
     nnoremap <C-h> <C-w>h
     nnoremap <C-j> <C-w>j
     nnoremap <C-k> <C-w>k
     nnoremap <C-l> <C-w>l
+
 " }
 
 " Leader Mappings {
+
     " Code folding options
     nmap <leader>f0 :set foldlevel=0<CR>
     nmap <leader>f1 :set foldlevel=1<CR>
@@ -105,4 +113,5 @@
     " Map <Leader>ff to display all lines with keyword under cursor
     " and ask which one to jump to
     nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
+
 " }
