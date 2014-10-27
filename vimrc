@@ -35,9 +35,9 @@
 
 " }
 
-
-" All of the plugins are installed with Vundle from this file.
+" Plugin Activation {
     source ~/.vim/vundle.vim
+" }
 
 " General config {
     source ~/.vim/config.vim

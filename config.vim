@@ -1,108 +1,124 @@
-" =============================================
-" Regular Vim Configuration (No Plugins Needed)
-" =============================================
+" =========================
+" Initial Vim Configuration
+" =========================
 
-" -----
-" Color
-" -----
-set background=dark
-colorscheme ir_black
-" ---------------------------
-" Encoding and Spell Checking
-" ---------------------------
-set encoding=utf-8
-set spelllang=pt,en
+" General {
+    filetype plugin indent on   " Automatically detect file types.
+    syntax on                   " Syntax highlighting
+    set mouse=a                 " Automatically enable mouse usage
+    set mousehide               " Hide the mouse cursor while typing
+    scriptencoding utf-8
 
-" --
-" UI
-" --
-set title           " swap terminal title
-set cmdheight=2     " Make the command area two lines high
-set noshowmode      " Don't show the mode since Powerline shows it
-set ruler           " Ruler on
-set number          " Show line number
-set tw=79           " Width of document (used by gd)
-set nowrap          " Don't automatically wrap on load
-set fo-=t           " Don't automatically wrap text when typing
-set nofoldenable    " disable folding
-set colorcolumn=80  " Color the 80th column differently as a wrapping guide.
+    if has('clipboard')
+        if has('unnamedplus')  " When possible use + register for copy-paste
+            set clipboard=unnamed,unnamedplus
+        else         " On mac and Windows, use * register for copy-paste
+            set clipboard=unnamed
+        endif
+    endif
 
-" GVim configuration
-if has("gui_running")
-    set guioptions-=T " hide tool bar
-    set guioptions-=m " hide menu bar
-    set guioptions-=r " hide right scrollbar
-    set guioptions-=b " hide bottom scrollbar
-    set guifont=Inconsolata-dz\ for\ Powerline\ 11
-" be cooler while using the cli version of VIM
-else
-    set t_Co=256
+    set shortmess+=filmnrxoOtT          " Abbrev. of messages (avoids 'hit enter')
+    set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
+    set virtualedit=onemore             " Allow for cursor beyond last character
+    set history=1000                    " Store a ton of history (default is 20)
+    "set spell                           " Spell checking on
+    set spelllang=pt,en
+    set hidden                          " Allow buffer switching without saving
+    set iskeyword-=.                    " '.' is an end of word designator
+    set iskeyword-=#                    " '#' is an end of word designator
+    set iskeyword-=-                    " '-' is an end of word designator
 
-" seems like this makes the window smoother in the cli version
-    set ttyfast
-endif
+    " Instead of reverting the cursor to the last position in the buffer, we
+    " set it to the first line when editing a git commit message
+    au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 
-" ---------
-" Behaviors
-" ---------
-syntax enable
-set nobackup            " Disable backup
-set nowritebackup
-set noswapfile          " Disable swap
-set history=700
-set undolevels=700
-set iskeyword+=\$,-     " Add extra characters that are valid parts of variables
-set clipboard+=unnamed  " Yanks go on clipboard instead
-set hidden              " Change buffer - without saving
-set autoread            " Automatically reload changes if detected
-set autowrite           " Writes on make/shell commands
-set gdefault            " This makes search/replace global by default
-set switchbuf=useopen   " Switch to an existing buffer if one exists
-set scrolloff=3          "Keep three lines below the last line when scrolling
+    set backup                  " Backups are nice ...
+    if has('persistent_undo')
+        set undofile                " So is persistent undo ...
+        set undolevels=1000         " Maximum number of changes that can be undone
+        set undoreload=10000        " Maximum number lines to save for undo on a buffer reload
+    endif
+" }
 
-" -----------
-" Text Format
-" -----------
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set shiftround
-set expandtab
-set smarttab
-set cindent
-set backspace=indent,eol,start  " Delete everything with backspace
+" UI {
+    set background=dark
+    colorscheme ir_black
 
-" ---------
-" Searching
-" ---------
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
+    if has("gui_running")
+        set guioptions-=T " hide tool bar
+        set guioptions-=m " hide menu bar
+        set guioptions-=r " hide right scrollbar
+        set guioptions-=b " hide bottom scrollbar
+        set guifont=Inconsolata-dz\ for\ Powerline\ 11
+    endif
 
-" ------
-" Visual
-" ------
-set showmatch       " Show matching brackets
-set matchtime=2     " How many tenths of a second to blink
-set list
-" Reset listchars
-set listchars=""
-set listchars+=tab:\|-
-" Show trailing spaces as dots
-set listchars+=trail:.
-" The character to show in the last column when wrap is off and the line
-" continues beyond the right of the screen
-set listchars+=extends:>
-" The character to show in the last column when wrap is off and the line
-" continues beyond the right of the screen
-set listchars+=precedes:<
+    set tabpagemax=15               " Only show 15 tabs
+    set showmode                    " Display the current mode
 
-" ---------------
-" Mouse
-" ---------------
-set mousehide  " Hide mouse after chars typed
-set mouse=a    " Mouse in all modes
+    set cursorline                  " Highlight current line
 
-" Better complete options to speed it up
-set complete=.,w,b,u,U
+    highlight clear SignColumn      " SignColumn should match background
+    highlight clear LineNr          " Current line number row will have same background color in relative mode
+
+    if has('cmdline_info')
+        set ruler                   " Show the ruler
+        set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " A ruler on steroids
+        set showcmd                 " Show partial commands in status line and
+                                    " Selected characters/lines in visual mode
+    endif
+
+    if has('statusline')
+        set laststatus=2
+
+        " Broken down into easily includeable segments
+        set statusline=%<%f\                     " Filename
+        set statusline+=%w%h%m%r                 " Options
+        set statusline+=%{fugitive#statusline()} " Git Hotness
+        set statusline+=\ [%{&ff}/%Y]            " Filetype
+        set statusline+=\ [%{getcwd()}]          " Current dir
+        set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info
+    endif
+
+    set backspace=indent,eol,start  " Backspace for dummies
+    set linespace=0                 " No extra spaces between rows
+    set nu                          " Line numbers on
+    set showmatch                   " Show matching brackets/parenthesis
+    set incsearch                   " Find as you type search
+    set hlsearch                    " Highlight search terms
+    set winminheight=0              " Windows can be 0 line high
+    set ignorecase                  " Case insensitive search
+    set smartcase                   " Case sensitive when uc present
+    set wildmenu                    " Show list instead of just completing
+    set wildmode=list:longest,full  " Command <Tab> completion, list matches, then longest common part, then all.
+    set whichwrap=b,s,h,l,<,>,[,]   " Backspace and cursor keys wrap too
+    set scrolljump=5                " Lines to scroll when cursor leaves screen
+    set scrolloff=3                 " Minimum lines to keep above and below cursor
+    set foldenable                  " Auto fold code
+    set list
+    set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+" }
+
+" Formatting {
+    set nowrap                      " Do not wrap long lines
+    set autoindent                  " Indent at the same level of the previous line
+    set shiftwidth=4                " Use indents of 4 spaces
+    set expandtab                   " Tabs are spaces, not tabs
+    set tabstop=4                   " An indentation every four columns
+    set softtabstop=4               " Let backspace delete indent
+    set nojoinspaces                " Prevents inserting two spaces after punctuation on a join (J)
+    set splitright                  " Puts new vsplit windows to the right of the current
+    set splitbelow                  " Puts new split windows to the bottom of the current
+    set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
+
+    autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl autocmd BufWritePre <buffer> if !exists('g:spf13_keep_trailing_whitespace') | call StripTrailingWhitespace() | endif
+    autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
+    autocmd FileType haskell,puppet,ruby,yml setlocal expandtab shiftwidth=2 softtabstop=2
+    " preceding line best in a plugin but here for now.
+
+    autocmd BufNewFile,BufRead *.coffee set filetype=coffee
+
+    " Workaround vim-commentary for Haskell
+    autocmd FileType haskell setlocal commentstring=--\ %s
+    " Workaround broken colour highlighting in Haskell
+    autocmd FileType haskell,rust setlocal nospell
+" }
