@@ -1,82 +1,108 @@
 " ========
 " Mappings
 " ========
+" Leader Key {
+    " Note: This line MUST come before any <leader> mappings
+    let mapleader=","
+" }
 
-" Set leader to ,
-" Note: This line MUST come before any <leader> mappings
-let mapleader=","
+" Base Mappings {
+    " Remapping esc
+    imap jj <esc>
 
+    " Just to beginning and end of lines easier. From http://vimbits.com/bits/16
+    noremap H ^
+    noremap L $
 
-" ----------------
-" Regular Mappings
-" ----------------
+    " Create newlines without entering insert mode
+    nnoremap go o<Esc>k
+    nnoremap gO O<Esc>j
 
-" Remapping esc
-imap jj <esc>
+    " remap U to <C-r> for easier redo
+    " from http://vimbits.com/bits/356
+    nnoremap U <C-r>
 
-" Use ; for : in normal and visual mode, less keystrokes
-nnoremap ; :
-vnoremap ; :
+    " easier moving of code blocks
+    vnoremap < <gv
+    vnoremap > >gv
 
-" Just to beginning and end of lines easier. From http://vimbits.com/bits/16
-noremap H ^
-noremap L $
+    " Shortcuts
+    " Change Working Directory to that of the current file
+    cmap cwd lcd %:p:h
+    cmap cd. lcd %:p:h
 
-" Create newlines without entering insert mode
-nnoremap go o<Esc>k
-nnoremap gO O<Esc>j
+    " Allow using the repeat operator with a visual selection (!)
+    " http://stackoverflow.com/a/8064607/127816
+    vnoremap . :normal .<CR>
 
-" remap U to <C-r> for easier redo
-" from http://vimbits.com/bits/356
-nnoremap U <C-r>
+    " For when you forget to sudo.. Really Write the file.
+    cmap w!! w !sudo tee % >/dev/null
 
-" Bind nohl
-" Removes highlight of your last search
-noremap <C-n> :nohl<CR>
-vnoremap <C-n> :nohl<CR>
-inoremap <C-n> :nohl<CR>
+    " Easier horizontal scrolling
+    map zl zL
+    map zh zH
+" }
 
-" easier moving of code blocks
-vnoremap < <gv
-vnoremap > >gv
+" Window Movement {
+    nnoremap <C-h> <C-w>h
+    nnoremap <C-j> <C-w>j
+    nnoremap <C-k> <C-w>k
+    nnoremap <C-l> <C-w>l
+" }
 
-" easier formatting of paragraphs
-vmap Q gq
-nmap Q gqap
+" Leader Mappings {
+    " Code folding options
+    nmap <leader>f0 :set foldlevel=0<CR>
+    nmap <leader>f1 :set foldlevel=1<CR>
+    nmap <leader>f2 :set foldlevel=2<CR>
+    nmap <leader>f3 :set foldlevel=3<CR>
+    nmap <leader>f4 :set foldlevel=4<CR>
+    nmap <leader>f5 :set foldlevel=5<CR>
+    nmap <leader>f6 :set foldlevel=6<CR>
+    nmap <leader>f7 :set foldlevel=7<CR>
+    nmap <leader>f8 :set foldlevel=8<CR>
+    nmap <leader>f9 :set foldlevel=9<CR>
 
+    " Toggle spelling mode with ,s
+    nnoremap <silent> <leader>ss :set spell!<CR>
 
-" ---------------
-" Window Movement
-" ---------------
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+    " Quicksave command
+    noremap <Leader>w :update<CR>
 
-" ---------------
-" Leader Mappings
-" ---------------
+    " Quick quit command
+    noremap <Leader>q :quit<CR>
 
-" Toggle spelling mode with ,s
-nnoremap <silent> <leader>ss :set spell!<CR>
+    " Bind nohl
+    " Removes highlight of your last search
+    noremap <Leader>/ :nohl<CR>
 
-" Quicksave command
-noremap <Leader>w :update<CR>
+    " easier moving between tabs
+    map <Leader>h <esc>:tabprevious<CR>
+    map <Leader>l <esc>:tabnext<CR>
 
-" Quick quit command
-noremap <Leader>q :quit<CR>
+    " map sort function to a key
+    " awesome on ordering imports on python
+    vnoremap <Leader>ss :sort<CR>
 
-" easier moving between tabs
-map <Leader>h <esc>:tabprevious<CR>
-map <Leader>l <esc>:tabnext<CR>
+    " Improved copy/paste
+    noremap <Leader>y "+y
+    noremap <Leader>p "+p
 
-" map sort function to a key
-" awesome on ordering imports on python
-vnoremap <Leader>ss :sort<CR>
+    " remove trailing whitespaces
+    map <Leader>sd :%s/\s\+$//<CR>
 
-" Improved copy/paste
-noremap <Leader>y "+y
-noremap <Leader>p "+p
+    " Some helpers to edit mode
+    " http://vimcasts.org/e/14
+    cnoremap %% <C-R>=expand('%:h').'/'<cr>
+    map <leader>ew :e %%
+    map <leader>es :sp %%
+    map <leader>ev :vsp %%
+    map <leader>et :tabe %%
 
-" remove trailing whitespaces
-map <Leader>sd :%s/\s\+$//<CR>
+    " Adjust viewports to the same size
+    map <Leader>= <C-w>=
+
+    " Map <Leader>ff to display all lines with keyword under cursor
+    " and ask which one to jump to
+    nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
+" }
