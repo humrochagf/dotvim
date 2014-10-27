@@ -1,6 +1,6 @@
-" ====================
-" Vundle Configuration
-" ====================
+" ============================================
+" Vundle configuration and bundle registration
+" ============================================
 
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -39,26 +39,57 @@ call vundle#begin()
         Bundle 'mhinz/vim-signify'
     " }
 
-    " Programming {
+    " General Programming {
         Bundle 'scrooloose/nerdcommenter'
         Bundle 'maelstrom/linters.vim'
-        Bundle 'davidhalter/jedi-vim'
+        Bundle 'scrooloose/syntastic'
+        Bundle 'godlygeek/tabular'
     " }
 
-    " LATEX {
-        Bundle 'gerw/vim-latex-suite'
+    " Snippets & AutoComplete {
+        Bundle 'Shougo/neocomplcache'
+        Bundle 'Shougo/neosnippet'
+        Bundle 'Shougo/neosnippet-snippets'
+        Bundle 'honza/vim-snippets'
     " }
+
+    " Writing {
+        Bundle 'gerw/vim-latex-suite'
+        Bundle 'reedes/vim-litecorrect'
+        Bundle 'reedes/vim-textobj-sentence'
+        Bundle 'reedes/vim-textobj-quote'
+        Bundle 'reedes/vim-wordy'
+    " }
+
+    " Python {
+        Bundle 'davidhalter/jedi-vim'
+        Bundle 'klen/python-mode'
+        Bundle 'yssource/python.vim'
+        Bundle 'python_match.vim'
+        Bundle 'pythoncomplete'
+    " }
+
+    " Javascript {
+        Bundle 'elzr/vim-json'
+        Bundle 'groenewege/vim-less'
+        Bundle 'pangloss/vim-javascript'
+        Bundle 'briancollins/vim-jst'
+        Bundle 'kchmck/vim-coffee-script'
+    " }
+
+    " HTML {
+        Bundle 'amirh/HTML-AutoCloseTag'
+        Bundle 'hail2u/vim-css3-syntax'
+        Bundle 'gorodinskiy/vim-coloresque'
+        Bundle 'tpope/vim-haml'
+    " }
+
+    " Misc {
+        Bundle 'tpope/vim-markdown'
+        Bundle 'spf13/vim-preview'
+    " }
+
 " }
 
 call vundle#end()
 filetype plugin indent on
-
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
