@@ -9,6 +9,10 @@
     set mousehide               " Hide the mouse cursor while typing
     scriptencoding utf-8
 
+    set nobackup            " Disable backup
+    set nowritebackup
+    set noswapfile          " Disable swap
+
     if has('clipboard')
         if has('unnamedplus')  " When possible use + register for copy-paste
             set clipboard=unnamed,unnamedplus
@@ -31,18 +35,12 @@
     " Instead of reverting the cursor to the last position in the buffer, we
     " set it to the first line when editing a git commit message
     au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
-
-    set backup                  " Backups are nice ...
-    if has('persistent_undo')
-        set undofile                " So is persistent undo ...
-        set undolevels=1000         " Maximum number of changes that can be undone
-        set undoreload=10000        " Maximum number lines to save for undo on a buffer reload
-    endif
 " }
 
 " UI {
     set background=dark
     colorscheme ir_black
+    set colorcolumn=80  " Color the 80th column differently as a wrapping guide.
 
     if has("gui_running")
         set guioptions-=T " hide tool bar
@@ -54,8 +52,6 @@
 
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
-
-    set cursorline                  " Highlight current line
 
     highlight clear SignColumn      " SignColumn should match background
     highlight clear LineNr          " Current line number row will have same background color in relative mode
@@ -95,7 +91,17 @@
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
     set list
-    set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+    " Reset listchars
+    set listchars=""
+    set listchars+=tab:\|-
+    " Show trailing spaces as dots
+    set listchars+=trail:.
+    " The character to show in the last column when wrap is off and the line
+    " continues beyond the right of the screen
+    set listchars+=extends:>
+    " The character to show in the last column when wrap is off and the line
+    " continues beyond the right of the screen
+    set listchars+=precedes:<
 " }
 
 " Formatting {
