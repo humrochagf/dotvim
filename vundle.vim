@@ -41,7 +41,6 @@ call vundle#begin()
 
     " General Programming {
         Bundle 'scrooloose/nerdcommenter'
-        Bundle 'maelstrom/linters.vim'
         Bundle 'scrooloose/syntastic'
         Bundle 'godlygeek/tabular'
     " }
