@@ -43,6 +43,10 @@
     source ~/.vim/config.vim
 "}
 
+" Functions definitions {
+    source ~/.vim/functions.vim
+" }
+
 " Mapping config {
     source ~/.vim/mappings.vim
 "}

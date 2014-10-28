@@ -97,7 +97,7 @@
     noremap <Leader>p "+p
 
     " remove trailing whitespaces
-    map <Leader>sd :%s/\s\+$//<CR>
+    noremap <Leader>sd :call StripTrailingWhitespace()<CR>
 
     " Some helpers to edit mode
     " http://vimcasts.org/e/14
