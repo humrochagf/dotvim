@@ -107,14 +107,13 @@
     if has('gui_running')
         set guioptions-=T           " Remove the toolbar
         set lines=40                " 40 lines of text instead of 24
-        if !exists("g:spf13_no_big_font")
-            if LINUX() && has("gui_running")
-                set guifont=Inconsolata-dz\ for\ Powerline:h11,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 11,Consolas\ Regular\ 12,Courier\ New\ Regular\ 14
-            elseif OSX() && has("gui_running")
-                set guifont=Inconsolata-dz\ for\ Powerline:h11,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
-            elseif WINDOWS() && has("gui_running")
-                set guifont=Inconsolata-dz\ for\ Powerline:h11,Andale_Mono:h11,Menlo:h11,Consolas:h11,Courier_New:h11
-            endif
+
+        if LINUX() && has("gui_running")
+            set guifont=Inconsolata-dz\ for\ Powerline\ 11,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 11,Consolas\ Regular\ 12,Courier\ New\ Regular\ 14
+        elseif OSX() && has("gui_running")
+            set guifont=Inconsolata-dz\ for\ Powerline:h11,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
+        elseif WINDOWS() && has("gui_running")
+            set guifont=Inconsolata-dz_for_Powerline:h11,Andale_Mono:h11,Menlo:h11,Consolas:h11,Courier_New:h11
         endif
     else
         if &term == 'xterm' || &term == 'screen'

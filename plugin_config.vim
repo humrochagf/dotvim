@@ -2,6 +2,10 @@
 " Plugin Configuration
 " ====================
 
+" Air-Line {
+    let g:airline_powerline_fonts = 1
+" }
+
 " NerdTree {
 
     if isdirectory(expand("~/.vim/bundle/nerdtree"))
