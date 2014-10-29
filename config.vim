@@ -8,7 +8,7 @@
     syntax on                   " Syntax highlighting
     set mouse=a                 " Automatically enable mouse usage
     set mousehide               " Hide the mouse cursor while typing
-    scriptencoding utf-8
+    set encoding=utf-8
 
     set nobackup            " Disable backup
     set nowritebackup
