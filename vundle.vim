@@ -53,7 +53,6 @@ call vundle#begin()
     " }
 
     " Writing {
-        Bundle 'gerw/vim-latex-suite'
         Bundle 'reedes/vim-litecorrect'
         Bundle 'reedes/vim-textobj-sentence'
         Bundle 'reedes/vim-textobj-quote'
