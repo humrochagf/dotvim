@@ -2,8 +2,28 @@
 " Plugin Configuration
 " ====================
 
-" Air-Line {
-    let g:airline_powerline_fonts = 1
+" Lightline{
+
+    set laststatus=2
+
+    let g:lightline = {
+        \ 'active': {
+        \   'left': [ [ 'mode', 'paste' ],
+        \             [ 'fugitive', 'filename', 'modified' ] ]
+        \ },
+        \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+        \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
+        \ 'component': {
+        \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+        \   'fugitive': '%{exists("*fugitive#head")&&strlen(fugitive#head())?'.
+        \               '"\ue0a0 ".fugitive#head():""}'
+        \ },
+        \ 'component_visible_condition': {
+        \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+        \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+        \ },
+        \ }
+
 " }
 
 " NerdTree {
@@ -22,6 +42,17 @@
         let NERDTreeKeepTreeInNewTab=1
         let g:nerdtree_tabs_open_on_gui_startup=0
     endif
+
+" }
+
+" JediVim {
+
+    let g:jedi#goto_assignments_command = "<leader>g"
+    let g:jedi#goto_definitions_command = "<leader>d"
+    let g:jedi#documentation_command = "K"
+    let g:jedi#usages_command = "<leader>n"
+    let g:jedi#completions_command = "<C-Space>"
+    let g:jedi#rename_command = "<leader>r"
 
 " }
 
@@ -52,24 +83,6 @@
         vmap <Leader>a,, :Tabularize /,\zs<CR>
         nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
         vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
-    endif
-
-" }
-
-" PyMode {
-
-    " Disable if python support not present
-    if !has('python')
-        let g:pymode = 0
-    endif
-
-    if isdirectory(expand("~/.vim/bundle/python-mode"))
-        let g:pymode_virtualenv = 1
-        let g:pymode_virtualenv_path = $VIRTUAL_ENV
-        let g:pymode_lint_checkers = ['pyflakes']
-        let g:pymode_trim_whitespaces = 0
-        let g:pymode_options = 0
-        let g:pymode_rope = 0
     endif
 
 " }
@@ -151,8 +164,4 @@
             \ "html,xml" : ["at"],
             \ }
 
-" }
-
-" python-syntax {
-let python_highlight_all = 1
 " }

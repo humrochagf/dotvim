@@ -16,12 +16,11 @@ call vundle#begin()
 
     " UI {
         Bundle 'flazz/vim-colorschemes'
-        Bundle 'bling/vim-airline'
-        Bundle 'bling/vim-bufferline'
+        Bundle 'itchyny/lightline.vim'
         Bundle 'scrooloose/nerdtree'
         Bundle 'jistr/vim-nerdtree-tabs'
         Bundle 'mbbill/undotree'
-        Bundle 'nathanaelkane/vim-indent-guides'
+        Bundle 'Yggdroot/indentLine'
     " }
 
     " General {
@@ -41,14 +40,12 @@ call vundle#begin()
 
     " General Programming {
         Bundle 'scrooloose/nerdcommenter'
-        Bundle 'scrooloose/syntastic'
         Bundle 'godlygeek/tabular'
     " }
 
     " Snippets & AutoComplete {
-        Bundle 'Shougo/neocomplcache'
-        Bundle 'Shougo/neosnippet'
-        Bundle 'Shougo/neosnippet-snippets'
+        Bundle 'SirVer/ultisnips'
+        Bundle 'honza/vim-snippets'
     " }
 
     " Writing {
@@ -60,11 +57,9 @@ call vundle#begin()
 
     " Python {
         Bundle 'davidhalter/jedi-vim'
-        Bundle 'klen/python-mode'
-        Bundle 'yssource/python.vim'
-        Bundle 'python_match.vim'
         Bundle 'jmcantrell/vim-virtualenv'
         Bundle 'hdima/python-syntax'
+        Bundle 'hynek/vim-python-pep8-indent'
     " }
 
     " Javascript {
