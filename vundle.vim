@@ -49,7 +49,6 @@ call vundle#begin()
         Bundle 'Shougo/neocomplcache'
         Bundle 'Shougo/neosnippet'
         Bundle 'Shougo/neosnippet-snippets'
-        Bundle 'honza/vim-snippets'
     " }
 
     " Writing {
@@ -64,7 +63,8 @@ call vundle#begin()
         Bundle 'klen/python-mode'
         Bundle 'yssource/python.vim'
         Bundle 'python_match.vim'
-        Bundle 'pythoncomplete'
+        Bundle 'jmcantrell/vim-virtualenv'
+        Bundle 'hdima/python-syntax'
     " }
 
     " Javascript {
