@@ -66,8 +66,6 @@ call vundle#begin()
         Bundle 'elzr/vim-json'
         Bundle 'groenewege/vim-less'
         Bundle 'pangloss/vim-javascript'
-        Bundle 'briancollins/vim-jst'
-        Bundle 'kchmck/vim-coffee-script'
     " }
 
     " HTML {
