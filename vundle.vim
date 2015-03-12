@@ -21,6 +21,7 @@ call vundle#begin()
         Bundle 'jistr/vim-nerdtree-tabs'
         Bundle 'mbbill/undotree'
         Bundle 'Yggdroot/indentLine'
+        Bundle 'godlygeek/csapprox'
     " }
 
     " General {
