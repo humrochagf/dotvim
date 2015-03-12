@@ -28,7 +28,7 @@ call vundle#begin()
         Bundle 'kien/ctrlp.vim'
         Bundle 'tacahiroy/ctrlp-funky'
         Bundle 'tpope/vim-surround'
-        Bundle 'spf13/vim-autoclose'
+        Bundle 'Townk/vim-autoclose'
         Bundle 'terryma/vim-multiple-cursors'
         Bundle 'Lokaltog/vim-easymotion'
         Bundle 'gcmt/wildfire.vim'
@@ -42,6 +42,7 @@ call vundle#begin()
     " General Programming {
         Bundle 'scrooloose/nerdcommenter'
         Bundle 'godlygeek/tabular'
+        Bundle 'scrooloose/syntastic'
     " }
 
     " Snippets & AutoComplete {
@@ -49,18 +50,12 @@ call vundle#begin()
         Bundle 'honza/vim-snippets'
     " }
 
-    " Writing {
-        Bundle 'reedes/vim-litecorrect'
-        Bundle 'reedes/vim-textobj-sentence'
-        Bundle 'reedes/vim-textobj-quote'
-        Bundle 'reedes/vim-wordy'
-    " }
-
     " Python {
         Bundle 'davidhalter/jedi-vim'
         Bundle 'jmcantrell/vim-virtualenv'
         Bundle 'hdima/python-syntax'
         Bundle 'hynek/vim-python-pep8-indent'
+        Bundle 'vim-scripts/django.vim'
     " }
 
     " Javascript {

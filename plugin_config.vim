@@ -45,6 +45,20 @@
 
 " }
 
+" Syntastic {
+
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list = 1
+    let g:syntastic_check_on_open = 1
+    let g:syntastic_check_on_wq = 0
+    let g:syntastic_python_checkers = ['pyflakes']
+
+" }
+
 " JediVim {
 
     let g:jedi#goto_assignments_command = "<leader>g"
@@ -53,6 +67,12 @@
     let g:jedi#usages_command = "<leader>n"
     let g:jedi#completions_command = "<C-Space>"
     let g:jedi#rename_command = "<leader>r"
+
+" }
+
+" Python-syntax {
+
+    let python_highlight_all = 1
 
 " }
 
