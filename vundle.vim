@@ -43,6 +43,7 @@ call vundle#begin()
         Bundle 'scrooloose/nerdcommenter'
         Bundle 'godlygeek/tabular'
         Bundle 'scrooloose/syntastic'
+        Bundle 'majutsushi/tagbar'
     " }
 
     " Snippets & AutoComplete {

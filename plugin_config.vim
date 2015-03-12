@@ -45,6 +45,12 @@
 
 " }
 
+" TagBar {
+
+    nmap <C-t> :TagbarToggle<CR>
+
+" }
+
 " Syntastic {
 
     set statusline+=%#warningmsg#
