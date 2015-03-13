@@ -1,14 +1,16 @@
 # dotvim
 
-This is my .vim folder working with [Vundle](https://github.com/gmarik/vundle).
+This is my .vim folder setup.
+
+The plugins are managed by [NeoBundle](https://github.com/Shougo/neobundle.vim).
 
 ## Installation
 
 1. Clone the repo with `git clone https://github.com/humrochagf/dotvim ~/.vim`
 2. `cd ~/.vim`
 3. `ln -s ~/.vim/vimrc ~/.vimrc` to make the .vimrc link on your home.
-4. Install [Vundle](https://github.com/gmarik/vundle) using `git clone http://github.com/gmarik/vundle.git bundle/vundle`
-5. `vim +BundleInstall +qall` to install all of the plugins.
+4. Install [NeoBundle](https://github.com/Shougo/neobundle.vim) with `curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh`
+5. `vim +NeoBundleInstall` to install all of the plugins.
 6. Enjoy!
 
 ## Plugin List
