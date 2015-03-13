@@ -83,7 +83,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
     " Misc {
         NeoBundle 'tpope/vim-markdown'
-        NeoBundle 'spf13/vim-preview'
     " }
 
 " }
