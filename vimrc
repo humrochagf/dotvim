@@ -36,7 +36,7 @@
 " }
 
 " Plugin Activation {
-    source ~/.vim/vundle.vim
+    source ~/.vim/neobundle.vim
 " }
 
 " General config {
