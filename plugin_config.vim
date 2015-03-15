@@ -9,17 +9,15 @@
     let g:lightline = {
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ],
-        \             [ 'fugitive', 'filename', 'modified' ] ]
+        \             [ 'fugitive', 'filename'] ]
         \ },
         \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
         \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
         \ 'component': {
-        \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
         \   'fugitive': '%{exists("*fugitive#head")&&strlen(fugitive#head())?'.
         \               '"\ue0a0 ".fugitive#head():""}'
         \ },
         \ 'component_visible_condition': {
-        \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
         \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
         \ },
         \ }
