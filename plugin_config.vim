@@ -43,6 +43,15 @@
 
 " }
 
+" Rainbow {
+
+    au FileType c,cpp,objc,objcpp,python call rainbow#load()
+
+    let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
+    let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
+
+" }
+
 " TagBar {
 
     nmap <C-t> :TagbarToggle<CR>

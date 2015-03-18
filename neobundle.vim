@@ -30,6 +30,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'jistr/vim-nerdtree-tabs'
         NeoBundle 'mbbill/undotree'
         NeoBundle 'Yggdroot/indentLine'
+        NeoBundle 'oblitum/rainbow'
         NeoBundle 'godlygeek/csapprox'
     " }
 
