@@ -38,6 +38,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'tacahiroy/ctrlp-funky'
         NeoBundle 'tpope/vim-surround'
         NeoBundle 'Townk/vim-autoclose'
+        NeoBundle 'valloric/MatchTagAlways'
         NeoBundle 'terryma/vim-multiple-cursors'
         NeoBundle 'Lokaltog/vim-easymotion'
         NeoBundle 'gcmt/wildfire.vim'
