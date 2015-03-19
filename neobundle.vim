@@ -39,7 +39,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'tacahiroy/ctrlp-funky'
         NeoBundle 'tpope/vim-surround'
         NeoBundle 'Townk/vim-autoclose'
-        NeoBundle 'valloric/MatchTagAlways'
+        NeoBundle 'Valloric/MatchTagAlways'
         NeoBundle 'terryma/vim-multiple-cursors'
         NeoBundle 'Lokaltog/vim-easymotion'
         NeoBundle 'gcmt/wildfire.vim'
@@ -51,8 +51,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
     " }
 
     " General Programming {
+        NeoBundle 'Valloric/YouCompleteMe'
         NeoBundle 'scrooloose/nerdcommenter'
-        NeoBundle 'godlygeek/tabular'
         NeoBundle 'scrooloose/syntastic'
         NeoBundle 'majutsushi/tagbar'
     " }
@@ -63,7 +63,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
     " }
 
     " Python {
-        NeoBundle 'davidhalter/jedi-vim'
         NeoBundle 'jmcantrell/vim-virtualenv'
         NeoBundle 'hdima/python-syntax'
         NeoBundle 'hynek/vim-python-pep8-indent'
