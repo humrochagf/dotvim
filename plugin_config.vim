@@ -43,6 +43,19 @@
 
 " }
 
+" YouCompleteMe {
+
+    let g:ycm_autoclose_preview_window_after_completion = 1
+    let g:ycm_min_num_identifier_candidate_chars = 3
+    let g:ycm_filetype_specific_completion_to_disable = {'javascript': 1}
+
+    nnoremap <C-y> :YcmForceCompileAndDiagnostics<cr>
+    nnoremap <C-g> :YcmCompleter GoTo<CR>
+    nnoremap <C-d> :YcmCompleter GoToDefinition<CR>
+    nnoremap <C-c> :YcmCompleter GoToDeclaration<CR>
+
+" }
+
 " Rainbow {
 
     au FileType c,cpp,objc,objcpp,python call rainbow#load()
@@ -55,21 +68,6 @@
 " TagBar {
 
     nmap <C-t> :TagbarToggle<CR>
-
-" }
-
-" Syntastic {
-
-    nnoremap <C-w> :SyntasticToggle<CR>
-    set statusline+=%#warningmsg#
-    set statusline+=%{SyntasticStatuslineFlag()}
-    set statusline+=%*
-
-    let g:syntastic_always_populate_loc_list = 1
-    let g:syntastic_auto_loc_list = 1
-    let g:syntastic_check_on_open = 0
-    let g:syntastic_check_on_wq = 0
-    let g:syntastic_python_checkers = ['pyflakes']
 
 " }
 

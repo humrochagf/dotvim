@@ -50,7 +50,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
     " General Programming {
         NeoBundle 'Valloric/YouCompleteMe'
         NeoBundle 'scrooloose/nerdcommenter'
-        NeoBundle 'scrooloose/syntastic'
     " }
 
     " Python {
