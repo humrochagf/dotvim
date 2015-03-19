@@ -28,21 +28,18 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'itchyny/lightline.vim'
         NeoBundle 'scrooloose/nerdtree'
         NeoBundle 'jistr/vim-nerdtree-tabs'
-        NeoBundle 'mbbill/undotree'
+        NeoBundle 'majutsushi/tagbar'
         NeoBundle 'Yggdroot/indentLine'
         NeoBundle 'oblitum/rainbow'
+        NeoBundle 'gorodinskiy/vim-coloresque'
         NeoBundle 'godlygeek/csapprox'
     " }
 
     " General {
-        NeoBundle 'kien/ctrlp.vim'
-        NeoBundle 'tacahiroy/ctrlp-funky'
         NeoBundle 'tpope/vim-surround'
         NeoBundle 'Townk/vim-autoclose'
         NeoBundle 'Valloric/MatchTagAlways'
-        NeoBundle 'terryma/vim-multiple-cursors'
         NeoBundle 'Lokaltog/vim-easymotion'
-        NeoBundle 'gcmt/wildfire.vim'
     " }
 
     " Git {
@@ -54,12 +51,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'Valloric/YouCompleteMe'
         NeoBundle 'scrooloose/nerdcommenter'
         NeoBundle 'scrooloose/syntastic'
-        NeoBundle 'majutsushi/tagbar'
-    " }
-
-    " Snippets & AutoComplete {
-        NeoBundle 'SirVer/ultisnips'
-        NeoBundle 'honza/vim-snippets'
     " }
 
     " Python {
@@ -71,15 +62,12 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
     " Javascript {
         NeoBundle 'elzr/vim-json'
-        NeoBundle 'groenewege/vim-less'
         NeoBundle 'pangloss/vim-javascript'
     " }
 
     " HTML {
         NeoBundle 'amirh/HTML-AutoCloseTag'
         NeoBundle 'hail2u/vim-css3-syntax'
-        NeoBundle 'gorodinskiy/vim-coloresque'
-        NeoBundle 'tpope/vim-haml'
     " }
 
     " Misc {

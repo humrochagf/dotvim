@@ -79,55 +79,6 @@
 
 " }
 
-" AutoCloseTag {
-
-    " Make it so AutoCloseTag works for xml and xhtml files as well
-    au FileType xhtml,xml ru ftplugin/html/autoclosetag.vim
-    nmap <Leader>ac <Plug>ToggleAutoCloseMappings
-
-" }
-
-" ctrlp {
-
-    if isdirectory(expand("~/.vim/bundle/ctrlp.vim/"))
-        let g:ctrlp_working_path_mode = 'ra'
-        nnoremap <silent> <D-t> :CtrlP<CR>
-        nnoremap <silent> <D-r> :CtrlPMRU<CR>
-        let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\.git$\|\.hg$\|\.svn$',
-            \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
-
-        " On Windows use "dir" as fallback command.
-        if WINDOWS()
-            let s:ctrlp_fallback = 'dir %s /-n /b /s /a-d'
-        elseif executable('ag')
-            let s:ctrlp_fallback = 'ag %s --nocolor -l -g ""'
-        elseif executable('ack-grep')
-            let s:ctrlp_fallback = 'ack-grep %s --nocolor -f'
-        elseif executable('ack')
-            let s:ctrlp_fallback = 'ack %s --nocolor -f'
-        else
-            let s:ctrlp_fallback = 'find %s -type f'
-        endif
-        let g:ctrlp_user_command = {
-            \ 'types': {
-                \ 1: ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others'],
-                \ 2: ['.hg', 'hg --cwd %s locate -I .'],
-            \ },
-            \ 'fallback': s:ctrlp_fallback
-        \ }
-
-        if isdirectory(expand("~/.vim/bundle/ctrlp-funky/"))
-            " CtrlP extensions
-            let g:ctrlp_extensions = ['funky']
-
-            "funky
-            nnoremap <Leader>fu :CtrlPFunky<Cr>
-        endif
-    endif
-
-"}
-
 " Fugitive {
 
     if isdirectory(expand("~/.vim/bundle/vim-fugitive/"))
@@ -146,22 +97,3 @@
     endif
 
 "}
-
-" UndoTree {
-
-    if isdirectory(expand("~/.vim/bundle/undotree/"))
-        nnoremap <Leader>u :UndotreeToggle<CR>
-        " If undotree is opened, it is likely one wants to interact with it.
-        let g:undotree_SetFocusWhenToggle=1
-    endif
-
-" }
-
-" Wildfire {
-
-    let g:wildfire_objects = {
-            \ "*" : ["i'", 'i"', "i)", "i]", "i}", "ip"],
-            \ "html,xml" : ["at"],
-            \ }
-
-" }
