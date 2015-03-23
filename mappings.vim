@@ -73,6 +73,10 @@
 
     " Toggle spelling mode with ,s
     nnoremap <silent> <leader>ss :set spell!<CR>
+    " Toggle en spell
+    nnoremap <silent> <leader>en :setlocal spell! spelllang=en<CR>
+    " Toggle pt spell
+    nnoremap <silent> <leader>pt :setlocal spell! spelllang=pt<CR>
 
     " Quicksave command
     noremap <Leader>w :update<CR>
