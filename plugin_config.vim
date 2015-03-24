@@ -50,7 +50,16 @@
     nnoremap <C-y> :YcmForceCompileAndDiagnostics<cr>
     nnoremap <silent> <C-]> :YcmCompleter GoTo<CR>
     nnoremap <C-d> :YcmCompleter GoToDefinition<CR>
-    nnoremap <C-c> :YcmCompleter GoToDeclaration<CR>
+
+" }
+
+" UltiSnips {
+
+    let g:UltiSnipsExpandTrigger="<C-c>"
+    let g:UltiSnipsJumpForwardTrigger="<C-x>"
+    let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+
+    let g:UltiSnipsEditSplit="vertical"
 
 " }
 
