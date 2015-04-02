@@ -45,21 +45,21 @@
 
 " YouCompleteMe {
 
-    let g:ycm_autoclose_preview_window_after_completion = 1
-
-    nnoremap <C-y> :YcmForceCompileAndDiagnostics<cr>
     nnoremap <silent> <C-]> :YcmCompleter GoTo<CR>
-    nnoremap <C-d> :YcmCompleter GoToDefinition<CR>
+    let g:ycm_autoclose_preview_window_after_completion = 1
+    let g:ycm_autoclose_preview_window_after_insertion = 1
+    let g:ycm_key_list_select_completion = ['<TAB>', '<Enter>']
+    let g:ycm_key_list_previous_completion = ['<S-TAB>']
+    let g:ycm_goto_buffer_command = 'horizontal-split'
 
 " }
 
-" UltiSnips {
+" Ultisnips {
 
-    let g:UltiSnipsExpandTrigger="<C-c>"
-    let g:UltiSnipsJumpForwardTrigger="<C-x>"
-    let g:UltiSnipsJumpBackwardTrigger="<C-z>"
-
-    let g:UltiSnipsEditSplit="vertical"
+    " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+    let g:UltiSnipsExpandTrigger="<c-o>"
+    let g:UltiSnipsJumpForwardTrigger="<c-b>"
+    let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " }
 
