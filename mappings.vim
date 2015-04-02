@@ -12,7 +12,7 @@
 " Base Mappings {
 
     " Remapping esc
-    imap jj <esc>
+    imap jj <C-c>
 
     " Just to beginning and end of lines easier. From http://vimbits.com/bits/16
     noremap H ^
