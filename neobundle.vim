@@ -38,8 +38,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
     " General {
         NeoBundle 'tpope/vim-surround'
         NeoBundle 'Townk/vim-autoclose'
-        NeoBundle 'Valloric/MatchTagAlways'
         NeoBundle 'Lokaltog/vim-easymotion'
+        NeoBundle 'ervandew/supertab'
     " }
 
     " Git {
