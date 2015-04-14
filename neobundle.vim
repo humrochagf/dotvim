@@ -23,23 +23,27 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundleFetch 'Shougo/neobundle.vim'
     " }
 
-    " UI {
+    " Visual and Cosmetics {
         NeoBundle 'flazz/vim-colorschemes'
+        NeoBundle 'oblitum/rainbow'
+        NeoBundle 'gorodinskiy/vim-coloresque'
+        NeoBundle 'Yggdroot/indentLine'
+        NeoBundle 'godlygeek/csapprox'
+    " }
+
+    " Interface and Navigation {
         NeoBundle 'itchyny/lightline.vim'
         NeoBundle 'scrooloose/nerdtree'
         NeoBundle 'jistr/vim-nerdtree-tabs'
         NeoBundle 'majutsushi/tagbar'
-        NeoBundle 'Yggdroot/indentLine'
-        NeoBundle 'oblitum/rainbow'
-        NeoBundle 'gorodinskiy/vim-coloresque'
-        NeoBundle 'godlygeek/csapprox'
     " }
 
-    " General {
+    " Utility {
         NeoBundle 'tpope/vim-surround'
         NeoBundle 'Townk/vim-autoclose'
         NeoBundle 'Lokaltog/vim-easymotion'
         NeoBundle 'ervandew/supertab'
+        NeoBundle 'scrooloose/nerdcommenter'
     " }
 
     " Git {
@@ -47,9 +51,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'mhinz/vim-signify'
     " }
 
-    " General Programming {
+    " Code Completion {
         NeoBundle 'Valloric/YouCompleteMe'
-        NeoBundle 'scrooloose/nerdcommenter'
         NeoBundle 'SirVer/ultisnips'
         NeoBundle 'honza/vim-snippets'
     " }
@@ -71,7 +74,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'hail2u/vim-css3-syntax'
     " }
 
-    " Misc {
+    " Markdown {
         NeoBundle 'tpope/vim-markdown'
     " }
 
