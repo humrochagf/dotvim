@@ -72,6 +72,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
     " HTML {
         NeoBundle 'amirh/HTML-AutoCloseTag'
         NeoBundle 'hail2u/vim-css3-syntax'
+        NeoBundle 'mattn/emmet-vim'
     " }
 
     " Markdown {
