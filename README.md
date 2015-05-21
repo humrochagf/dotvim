@@ -41,6 +41,7 @@ That is the list of plugins used on my config.
 * [Lokaltog/vim-easymotion](https://github.com/Lokaltog/vim-easymotion) - Faster code navigation.
 * [ervandew/supertab](https://github.com/ervandew/supertab) - Awesome tab insert completion.
 * [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Easy comments handling.
+* [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim) - Fuzzy file, buffer, mru, tag, etc finder.
 
 ### Git
 

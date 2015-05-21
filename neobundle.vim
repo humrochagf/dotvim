@@ -44,6 +44,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'Lokaltog/vim-easymotion'
         NeoBundle 'ervandew/supertab'
         NeoBundle 'scrooloose/nerdcommenter'
+        NeoBundle 'kien/ctrlp.vim'
     " }
 
     " Git {
