@@ -14,10 +14,6 @@
     " Remapping esc
     imap jj <C-c>
 
-    " Just to beginning and end of lines easier. From http://vimbits.com/bits/16
-    noremap H ^
-    noremap L $
-
     " Create newlines without entering insert mode
     nnoremap go o<Esc>k
     nnoremap gO O<Esc>j
