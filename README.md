@@ -67,6 +67,7 @@ That is the list of plugins used on my config.
 * [amirh/HTML-AutoCloseTag](https://github.com/amirh/HTML-AutoCloseTag) - HTML automatic tag closing.
 * [mattn/emmet-vim](https://github.com/mattn/emmet-vim) - Zencoding plugin.
 * [tpope/vim-haml](https://github.com/tpope/vim-haml) - Functionality from haml.
+* [hail2u/vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) - Add CSS3 syntax support.
 
 ## Plugin Installation / Requirements
 

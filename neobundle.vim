@@ -70,6 +70,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'amirh/HTML-AutoCloseTag'
         NeoBundle 'mattn/emmet-vim'
         NeoBundle 'tpope/vim-haml'
+        NeoBundle 'hail2u/vim-css3-syntax'
     " }
 " }
 

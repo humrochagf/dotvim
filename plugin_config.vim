@@ -81,6 +81,7 @@
 " Vim Polyglot {
 
     let g:polyglot_disabled = ['python']
+    let g:polyglot_disabled = ['css']
 
 " }
 
