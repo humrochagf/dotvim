@@ -39,6 +39,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
     " }
 
     " Utility {
+        NeoBundle 'sheerun/vim-polyglot'
         NeoBundle 'tpope/vim-surround'
         NeoBundle 'Townk/vim-autoclose'
         NeoBundle 'Lokaltog/vim-easymotion'
@@ -62,24 +63,14 @@ call neobundle#begin(expand('~/.vim/bundle/'))
         NeoBundle 'jmcantrell/vim-virtualenv'
         NeoBundle 'hdima/python-syntax'
         NeoBundle 'hynek/vim-python-pep8-indent'
-        NeoBundle 'vim-scripts/django.vim'
-    " }
-
-    " Javascript {
-        NeoBundle 'elzr/vim-json'
-        NeoBundle 'pangloss/vim-javascript'
+        NeoBundle 'fisadev/vim-isort'
     " }
 
     " HTML {
         NeoBundle 'amirh/HTML-AutoCloseTag'
-        NeoBundle 'hail2u/vim-css3-syntax'
         NeoBundle 'mattn/emmet-vim'
+        NeoBundle 'tpope/vim-haml'
     " }
-
-    " Markdown {
-        NeoBundle 'tpope/vim-markdown'
-    " }
-
 " }
 
 call neobundle#end()

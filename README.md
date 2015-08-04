@@ -36,6 +36,7 @@ That is the list of plugins used on my config.
 
 ### Utility
 
+* [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) - Language improvements.
 * [tpope/vim-surround](https://github.com/tpope/vim-surround) - Surroundings handling shortcuts.
 * [Townk/vim-autoclose](https://github.com/Townk/vim-autoclose) - Auto-close matching surroundings.
 * [Lokaltog/vim-easymotion](https://github.com/Lokaltog/vim-easymotion) - Faster code navigation.
@@ -59,24 +60,17 @@ That is the list of plugins used on my config.
 * [jmcantrell/vim-virtualenv](https://github.com/jmcantrell/vim-virtualenv) - Virtualenv handler.
 * [hdima/python-syntax](https://github.com/hdima/python-syntax) - Improved python syntax highlighting.
 * [hynek/vim-python-pep8-indent](https://github.com/hynek/vim-python-pep8-indent) - Pep8 code indentation.
-* [vim-scripts/django.vim](https://github.com/vim-scripts/django.vim) - Django templates code highlighting.
-
-### Javascript
-
-* [elzr/vim-json](https://github.com/elzr/vim-json) - Improved JSON highlighting.
-* [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript) - Better javascript highlight and syntax.
+* [fisadev/vim-isort](https://github.com/fisadev/vim-isort) - Python Import sorting
 
 ### HTML
 
 * [amirh/HTML-AutoCloseTag](https://github.com/amirh/HTML-AutoCloseTag) - HTML automatic tag closing.
-* [hail2u/vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) - Add CSS3 syntax support.
-
-### Markdown
-
-* [tpope/vim-markdown](https://github.com/tpope/vim-markdown) - Add Markdown syntax support.
+* [mattn/emmet-vim](https://github.com/mattn/emmet-vim) - Zencoding plugin.
+* [tpope/vim-haml](https://github.com/tpope/vim-haml) - Functionality from haml.
 
 ## Plugin Installation / Requirements
 
 * [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) Requires font patching.
 * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) and [mhinz/vim-signify](https://github.com/mhinz/vim-signify) Requires Git to be installed.
 * [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) Requires plugin compilation.
+* [fisadev/vim-isort](https://github.com/fisadev/vim-isort) Requires isort from pip.

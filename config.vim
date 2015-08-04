@@ -120,7 +120,7 @@
 
     autocmd FileType c,cpp,java,go,php,javascript,puppet,python,django,htmldjango,rust,twig,html,xml,yml,perl autocmd BufWritePre <buffer> call StripTrailingWhitespace()
     autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
-    autocmd FileType haskell,puppet,ruby,django,htmldjango,html,xml,yml,tex,css,scss setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+    autocmd FileType haskell,puppet,ruby,django,htmldjango,html,html5,xml,yml,tex,css,scss setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
     autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
