@@ -95,6 +95,11 @@
     " Improved copy/paste
     noremap <Leader>y "+y
     noremap <Leader>p "+p
+    noremap <Leader>0p "0p
+
+    " UPPER and lower on normal mode
+    nnoremap <Leader>U viwU
+    nnoremap <Leader>u viwu
 
     " remove trailing whitespaces
     noremap <Leader>sd :call StripTrailingWhitespace()<CR>
