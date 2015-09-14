@@ -115,12 +115,12 @@
     set splitbelow                  " Puts new split windows to the bottom of the current
     set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
-    " set wrap on latex .tex files
-    autocmd FileType tex set wrap
-
     autocmd FileType c,cpp,java,go,php,javascript,puppet,python,django,htmldjango,rust,twig,html,xml,yml,perl autocmd BufWritePre <buffer> call StripTrailingWhitespace()
     autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
     autocmd FileType haskell,puppet,ruby,javascript,django,htmldjango,html,html5,xml,yml,tex,css,scss setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+
+    " set wrap on this files
+    autocmd FileType text,markdown,rst,tex set wrap linebreak nolist
 
     autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
