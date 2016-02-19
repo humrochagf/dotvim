@@ -26,9 +26,9 @@ call plug#begin('~/.vim/plugged')
 
     " Interface and Navigation {
         Plug 'itchyny/lightline.vim'
-        Plug 'scrooloose/nerdtree'
+        Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeTabsToggle' }
         Plug 'jistr/vim-nerdtree-tabs'
-        Plug 'majutsushi/tagbar'
+        Plug 'majutsushi/tagbar', { 'on':  'TagbarToggle' }
     " }
 
     " Utility {
