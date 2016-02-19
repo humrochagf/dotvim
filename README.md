@@ -2,15 +2,15 @@
 
 This is my .vim folder setup.
 
-The plugins are managed by [NeoBundle](https://github.com/Shougo/neobundle.vim).
+The plugins are managed by [VIM-Plug](https://github.com/junegunn/vim-plug).
 
 ## Installation
 
 1. Clone the repo with `git clone https://github.com/humrochagf/dotvim ~/.vim`
 2. `cd ~/.vim`
 3. `ln -s ~/.vim/vimrc ~/.vimrc` to make the .vimrc link on your home.
-4. Install [NeoBundle](https://github.com/Shougo/neobundle.vim) with `curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh`
-5. `vim +NeoBundleInstall` to install all of the plugins.
+4. Install [VIM-Plug](https://github.com/junegunn/vim-plug) with `curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+5. `vim +PlugInstall` to install all of the plugins.
 6. Enjoy!
 
 **Obs.:** With neovim point vimrc to .nvimrc, and for python support run `pip install neovim` on your system or virtualenv.
