@@ -65,6 +65,10 @@ call plug#begin('~/.vim/plugged')
         Plug 'tpope/vim-haml', { 'for': ['html', 'jinja', 'htmldjango'] }
         Plug 'hail2u/vim-css3-syntax'
     " }
+
+    " Metrics {
+        Plug 'wakatime/vim-wakatime'
+    " }
 " }
 
 call plug#end()
