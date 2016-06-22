@@ -26,9 +26,9 @@ call plug#begin('~/.vim/plugged')
 
     " Interface and Navigation {
         Plug 'itchyny/lightline.vim'
-        Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeTabsToggle' }
+        Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeTabsToggle' }
         Plug 'jistr/vim-nerdtree-tabs'
-        Plug 'majutsushi/tagbar', { 'on':  'TagbarToggle' }
+        Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
     " }
 
     " Utility {
@@ -68,6 +68,10 @@ call plug#begin('~/.vim/plugged')
 
     " Metrics {
         Plug 'wakatime/vim-wakatime'
+    " }
+
+    " Pair Programming {
+        Plug 'Floobits/floobits-vim', { 'on': 'FlooJoinWorkspace' }
     " }
 " }
 
