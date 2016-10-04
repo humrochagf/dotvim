@@ -59,6 +59,10 @@ call plug#begin('~/.vim/plugged')
         Plug 'fisadev/vim-isort', { 'for': 'python' }
     " }
 
+    " Elm {
+        Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
+    " }
+
     " HTML {
         Plug 'amirh/HTML-AutoCloseTag', { 'for': ['html', 'jinja', 'htmldjango'] }
         Plug 'mattn/emmet-vim', { 'for': ['html', 'jinja', 'htmldjango'] }
