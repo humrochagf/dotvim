@@ -75,7 +75,7 @@ call plug#begin('~/.vim/plugged')
     " }
 
     " Pair Programming {
-        Plug 'Floobits/floobits-vim', { 'on': 'FlooJoinWorkspace' }
+        Plug 'floobits/floobits-vim', { 'on': 'FlooJoinWorkspace' }
     " }
 " }
 

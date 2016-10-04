@@ -62,12 +62,24 @@ That is the list of plugins used on my config.
 * [hynek/vim-python-pep8-indent](https://github.com/hynek/vim-python-pep8-indent) - Pep8 code indentation.
 * [fisadev/vim-isort](https://github.com/fisadev/vim-isort) - Python Import sorting
 
+### Elm
+
+* [lambdatoast/elm.vim](https://github.com/lambdatoast/elm.vim) - Elm code highlighting and utility
+
 ### HTML
 
 * [amirh/HTML-AutoCloseTag](https://github.com/amirh/HTML-AutoCloseTag) - HTML automatic tag closing.
 * [mattn/emmet-vim](https://github.com/mattn/emmet-vim) - Zencoding plugin.
 * [tpope/vim-haml](https://github.com/tpope/vim-haml) - Functionality from haml.
 * [hail2u/vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) - Add CSS3 syntax support.
+
+### Metrics
+
+* [wakatime/vim-wakatime](https://github.com/wakatime/vim-wakatime) - Coding performance metrics.
+
+### Pair Programming
+
+* [floobits/floobits-vim](https://github.com/floobits/floobits-vim) - Pair programming utility.
 
 ## Plugin Installation / Requirements
 
