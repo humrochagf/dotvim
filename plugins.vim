@@ -60,7 +60,7 @@ call plug#begin('~/.vim/plugged')
     " }
 
     " Elm {
-        Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
+        Plug 'elmcast/elm-vim', { 'for': 'elm' }
     " }
 
     " HTML {

@@ -81,7 +81,9 @@
 " }
 
 " Vim Isort {
+
     let g:vim_isort_map = '<C-i>'
+
 " }
 
 " Fugitive {
@@ -102,3 +104,10 @@
     endif
 
 "}
+
+" Elm-vim {
+
+    let g:elm_format_autosave = 1
+    let g:elm_setup_keybindings = 0
+
+" }
