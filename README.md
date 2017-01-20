@@ -37,12 +37,9 @@ That is the list of plugins used on my config.
 ### Utility
 
 * [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) - Language improvements.
-* [tpope/vim-surround](https://github.com/tpope/vim-surround) - Surroundings handling shortcuts.
-* [Townk/vim-autoclose](https://github.com/Townk/vim-autoclose) - Auto-close matching surroundings.
-* [Lokaltog/vim-easymotion](https://github.com/Lokaltog/vim-easymotion) - Faster code navigation.
-* [ervandew/supertab](https://github.com/ervandew/supertab) - Awesome tab insert completion.
+* [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Auto-close matching surroundings.
 * [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Easy comments handling.
-* [kien/ctrlp.vim](https://github.com/kien/ctrlp.vim) - Fuzzy file, buffer, mru, tag, etc finder.
+* [Shougo/vimproc](https://github.com/Shougo/vimproc) - Interactive command execution in Vim.
 
 ### Git
 
@@ -58,28 +55,24 @@ That is the list of plugins used on my config.
 ### Python
 
 * [jmcantrell/vim-virtualenv](https://github.com/jmcantrell/vim-virtualenv) - Virtualenv handler.
-* [hdima/python-syntax](https://github.com/hdima/python-syntax) - Improved python syntax highlighting.
-* [hynek/vim-python-pep8-indent](https://github.com/hynek/vim-python-pep8-indent) - Pep8 code indentation.
 * [fisadev/vim-isort](https://github.com/fisadev/vim-isort) - Python Import sorting
 
 ### Elm
 
 * [lambdatoast/elm.vim](https://github.com/lambdatoast/elm.vim) - Elm code highlighting and utility
 
+### TypeScript/Angular
+
+* [Quramy/vim-js-pretty-template](https://github.com/Quramy/vim-js-pretty-template) - Highlights JavaScript's Template Strings in other FileType syntax rule.
+* [Quramy/tsuquyomi](https://github.com/Quramy/tsuquyomi) - Make your Vim a TypeScript IDE.
+
 ### HTML
 
-* [amirh/HTML-AutoCloseTag](https://github.com/amirh/HTML-AutoCloseTag) - HTML automatic tag closing.
 * [mattn/emmet-vim](https://github.com/mattn/emmet-vim) - Zencoding plugin.
-* [tpope/vim-haml](https://github.com/tpope/vim-haml) - Functionality from haml.
-* [hail2u/vim-css3-syntax](https://github.com/hail2u/vim-css3-syntax) - Add CSS3 syntax support.
 
 ### Metrics
 
 * [wakatime/vim-wakatime](https://github.com/wakatime/vim-wakatime) - Coding performance metrics.
-
-### Pair Programming
-
-* [floobits/floobits-vim](https://github.com/floobits/floobits-vim) - Pair programming utility.
 
 ## Plugin Installation / Requirements
 

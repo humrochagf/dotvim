@@ -33,12 +33,9 @@ call plug#begin('~/.vim/plugged')
 
     " Utility {
         Plug 'sheerun/vim-polyglot'
-        Plug 'tpope/vim-surround'
-        Plug 'Townk/vim-autoclose'
-        Plug 'Lokaltog/vim-easymotion'
-        Plug 'ervandew/supertab'
+        Plug 'jiangmiao/auto-pairs'
         Plug 'scrooloose/nerdcommenter'
-        Plug 'kien/ctrlp.vim'
+        Plug 'Shougo/vimproc.vim', {'do' : 'make'}
     " }
 
     " Git {
@@ -54,8 +51,6 @@ call plug#begin('~/.vim/plugged')
 
     " Python {
         Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
-        Plug 'hdima/python-syntax', { 'for': 'python' }
-        Plug 'hynek/vim-python-pep8-indent', { 'for': 'python' }
         Plug 'fisadev/vim-isort', { 'for': 'python' }
     " }
 
@@ -63,19 +58,17 @@ call plug#begin('~/.vim/plugged')
         Plug 'elmcast/elm-vim', { 'for': 'elm' }
     " }
 
+    " TypeScript/Angular {
+        Plug 'Quramy/vim-js-pretty-template', { 'for': 'typescript' }
+        Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
+    " }
+
     " HTML {
-        Plug 'amirh/HTML-AutoCloseTag', { 'for': ['html', 'jinja', 'htmldjango'] }
         Plug 'mattn/emmet-vim', { 'for': ['html', 'jinja', 'htmldjango'] }
-        Plug 'tpope/vim-haml', { 'for': ['html', 'jinja', 'htmldjango'] }
-        Plug 'hail2u/vim-css3-syntax'
     " }
 
     " Metrics {
         Plug 'wakatime/vim-wakatime'
-    " }
-
-    " Pair Programming {
-        Plug 'floobits/floobits-vim', { 'on': 'FlooJoinWorkspace' }
     " }
 " }
 

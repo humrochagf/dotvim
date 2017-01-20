@@ -74,40 +74,31 @@
 
 " }
 
-" Vim Polyglot {
-
-    let g:polyglot_disabled = ['python', 'css']
-
-" }
-
 " Vim Isort {
 
     let g:vim_isort_map = '<C-i>'
 
 " }
 
-" Fugitive {
-
-    if isdirectory(expand("~/.vim/bundle/vim-fugitive/"))
-        nnoremap <silent> <leader>gs :Gstatus<CR>
-        nnoremap <silent> <leader>gd :Gdiff<CR>
-        nnoremap <silent> <leader>gc :Gcommit<CR>
-        nnoremap <silent> <leader>gb :Gblame<CR>
-        nnoremap <silent> <leader>gl :Glog<CR>
-        nnoremap <silent> <leader>gp :Git push<CR>
-        nnoremap <silent> <leader>gr :Gread<CR>
-        nnoremap <silent> <leader>gw :Gwrite<CR>
-        nnoremap <silent> <leader>ge :Gedit<CR>
-        " Mnemonic _i_nteractive
-        nnoremap <silent> <leader>gi :Git add -p %<CR>
-        nnoremap <silent> <leader>gg :SignifyToggle<CR>
-    endif
-
-"}
-
 " Elm-vim {
 
     let g:elm_format_autosave = 1
     let g:elm_setup_keybindings = 0
+
+" }
+
+" typescript-vim {
+
+    let g:typescript_compiler_binary = 'tsc'
+    let g:typescript_compiler_options = ''
+    autocmd QuickFixCmdPost [^l]* nested cwindow
+    autocmd QuickFixCmdPost    l* nested lwindow
+
+" }
+
+" vim-js-pretty-template {
+
+    autocmd FileType typescript JsPreTmpl html
+    autocmd FileType typescript syn clear foldBraces
 
 " }
