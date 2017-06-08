@@ -102,3 +102,8 @@
     autocmd FileType typescript syn clear foldBraces
 
 " }
+
+" auto-pairs {
+    let g:AutoPairsShortcutBackInsert=''
+    let g:AutoPairsShortcutJump=''
+" }
