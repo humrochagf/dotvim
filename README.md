@@ -38,6 +38,7 @@ That is the list of plugins used on my config.
 
 * [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) - Language improvements.
 * [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Auto-close matching surroundings.
+* [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) - True Sublime Text style multiple selections for Vim.
 * [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Easy comments handling.
 * [Shougo/vimproc](https://github.com/Shougo/vimproc) - Interactive command execution in Vim.
 
