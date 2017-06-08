@@ -34,6 +34,7 @@ call plug#begin('~/.vim/plugged')
     " Utility {
         Plug 'sheerun/vim-polyglot'
         Plug 'jiangmiao/auto-pairs'
+        Plug 'terryma/vim-multiple-cursors'
         Plug 'scrooloose/nerdcommenter'
         Plug 'Shougo/vimproc.vim', {'do' : 'make'}
     " }
