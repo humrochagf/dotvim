@@ -67,6 +67,7 @@
     set list
     " Reset listchars
     set listchars=""
+    " Show tabs as |---
     set listchars+=tab:\|-
     " Show trailing spaces as dots
     set listchars+=trail:.
@@ -118,9 +119,6 @@
     autocmd FileType c,cpp,java,go,php,javascript,typescript,json,puppet,python,django,htmldjango,elm,rust,twig,html,xml,yml,perl,css,scss,sass,stylus autocmd BufWritePre <buffer> call StripTrailingWhitespace()
     autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
     autocmd FileType haskell,puppet,ruby,php,javascript,typescript,json,django,htmldjango,html,html5,xml,yml,tex,css,scss,sass,stylus setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
-
-    " set wrap on this files
-    autocmd FileType text,markdown,rst,tex set wrap linebreak nolist
 
     autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
