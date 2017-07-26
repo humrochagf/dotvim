@@ -9,16 +9,17 @@
     let g:lightline = {
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ],
-        \             [ 'fugitive', 'filename'] ]
+        \             [ 'virtualenv', 'filename', 'fugitive' ] ]
         \ },
         \ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
         \ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" },
         \ 'component': {
         \   'fugitive': '%{exists("*fugitive#head")&&strlen(fugitive#head())?'.
-        \               '"\ue0a0 ".fugitive#head():""}'
+        \               '"\ue0a0 ".fugitive#head():""}',
+        \   'virtualenv': '%{strlen(virtualenv#statusline())?virtualenv#statusline():"(No Env)"}'
         \ },
         \ 'component_visible_condition': {
-        \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+        \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())',
         \ },
         \ }
 

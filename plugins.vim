@@ -51,7 +51,7 @@ call plug#begin('~/.vim/plugged')
     " }
 
     " Python {
-        Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
+        Plug 'jmcantrell/vim-virtualenv'
         Plug 'fisadev/vim-isort', { 'for': 'python' }
     " }
 

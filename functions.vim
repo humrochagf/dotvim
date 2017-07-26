@@ -38,3 +38,11 @@
     command! -complete=file -nargs=+ Shell call s:RunShellCommand(<q-args>)
     " e.g. Grep current file for <search_term>: Shell grep -Hn <search_term> %
 " }
+
+" Sorting {
+    " sort words in a line
+    :command -nargs=0 -range SortLine <line1>,<line2>call setline('.',join(sort(split(getline('.'),' ')),' '))
+
+    " sort words in a line (comma separated)
+    :command -nargs=0 -range SortLineCommaSeparated <line1>,<line2>call setline('.',join(sort(split(getline('.'),',')),','))
+" }

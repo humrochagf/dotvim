@@ -116,9 +116,9 @@
     set splitbelow                  " Puts new split windows to the bottom of the current
     set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
-    autocmd FileType c,cpp,java,go,php,javascript,typescript,json,puppet,python,django,htmldjango,elm,rust,twig,html,xml,yml,perl,css,scss,sass,stylus autocmd BufWritePre <buffer> call StripTrailingWhitespace()
+    autocmd FileType c,cpp,css,django,elm,go,haskell,html,html5,htmldjango,java,javascript,json,perl,php,puppet,python,rust,sass,scss,stylus,twig,typescript,xml,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
     autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
-    autocmd FileType haskell,puppet,ruby,php,javascript,typescript,json,django,htmldjango,html,html5,xml,yml,tex,css,scss,sass,stylus setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+    autocmd FileType css,django,elm,haskell,html,html5,htmldjango,javascript,json,php,puppet,ruby,sass,scss,stylus,tex,typescript,xml,yml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
     autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
