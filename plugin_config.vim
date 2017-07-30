@@ -108,3 +108,8 @@
     let g:AutoPairsShortcutBackInsert=''
     let g:AutoPairsShortcutJump=''
 " }
+
+" vim-polyglot {
+    " markdown
+    let g:vim_markdown_conceal = 0
+" }
