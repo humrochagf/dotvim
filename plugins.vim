@@ -50,6 +50,10 @@ call plug#begin('~/.vim/plugged')
         Plug 'honza/vim-snippets'
     " }
 
+    " Lint {
+        Plug 'w0rp/ale'
+    " }
+
     " Python {
         Plug 'jmcantrell/vim-virtualenv'
         Plug 'fisadev/vim-isort', { 'for': 'python' }

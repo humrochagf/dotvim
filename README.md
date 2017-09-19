@@ -53,6 +53,10 @@ That is the list of plugins used on my config.
 * [SirVer/ultisnips](https://github.com/SirVer/ultisnips) - Code snippets tool.
 * [honza/vim-snippets](https://github.com/honza/vim-snippets) - Snippets packages.
 
+### Lint
+
+* [w0rp/ale](https://github.com/w0rp/ale) - Asynchronous Lint Engine.
+
 ### Python
 
 * [jmcantrell/vim-virtualenv](https://github.com/jmcantrell/vim-virtualenv) - Virtualenv handler.
