@@ -2,9 +2,9 @@
 " Plugin Configuration
 " ====================
 
-" Lightline{
+" Lightline {
 
-    set laststatus=2
+    set laststatus = 2
 
     let g:lightline = {
         \ 'active': {
@@ -29,14 +29,14 @@
 
     map <C-e> :NERDTreeTabsToggle<CR>
 
-    let NERDTreeShowBookmarks=1
-    let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
-    let NERDTreeChDirMode=0
-    let NERDTreeQuitOnOpen=1
-    let NERDTreeMouseMode=2
-    let NERDTreeShowHidden=1
-    let NERDTreeKeepTreeInNewTab=1
-    let g:nerdtree_tabs_open_on_gui_startup=0
+    let NERDTreeShowBookmarks = 1
+    let NERDTreeIgnore = ['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
+    let NERDTreeChDirMode = 0
+    let NERDTreeQuitOnOpen = 1
+    let NERDTreeMouseMode = 2
+    let NERDTreeShowHidden = 1
+    let NERDTreeKeepTreeInNewTab = 1 
+    let g:nerdtree_tabs_open_on_gui_startup = 0
 
 " }
 
@@ -54,9 +54,9 @@
 " Ultisnips {
 
     " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-    let g:UltiSnipsExpandTrigger="<c-o>"
-    let g:UltiSnipsJumpForwardTrigger="<c-b>"
-    let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+    let g:UltiSnipsExpandTrigger = "<C-o>"
+    let g:UltiSnipsJumpForwardTrigger = "<C-b>"
+    let g:UltiSnipsJumpBackwardTrigger = "<C-z>"
 
 " }
 
@@ -64,7 +64,7 @@
 
     au FileType c,cpp,objc,objcpp,python call rainbow#load()
 
-    let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
+    let g:rainbow_guifgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
     let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
 
 " }
@@ -105,11 +105,18 @@
 " }
 
 " auto-pairs {
-    let g:AutoPairsShortcutBackInsert=''
-    let g:AutoPairsShortcutJump=''
+
+    let g:AutoPairsFlyMode = 1
+    let g:AutoPairsShortcutBackInsert = '<C-b>'
+    let g:AutoPairsShortcutFastWrap = '<C-w>'
+    let g:AutoPairsShortcutToggle = '<C-p>'
+    let g:AutoPairsShortcutJump = ''
+
 " }
 
 " vim-polyglot {
+
     " markdown
     let g:vim_markdown_conceal = 0
+
 " }
