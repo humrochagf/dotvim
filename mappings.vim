@@ -118,3 +118,12 @@
     nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
 " }
+
+" auto text break at insert mode {
+    " automatic text breaks on punctuation for smarter undo at text editing
+    " thanks to https://twitter.com/vimgifs/status/913390282242232320
+    inoremap . .<C-g>u
+    inoremap ? ?<C-g>u
+    inoremap ! !<C-g>u
+    inoremap , ,<C-g>u
+" }
