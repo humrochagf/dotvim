@@ -48,6 +48,7 @@
     let g:ycm_key_list_select_completion = ['<TAB>']
     let g:ycm_key_list_previous_completion = ['<S-TAB>']
     let g:ycm_goto_buffer_command = 'horizontal-split'
+    let g:ycm_python_binary_path = 'python'
 
 " }
 
