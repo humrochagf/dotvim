@@ -88,11 +88,11 @@
         set lines=40                " 40 lines of text instead of 24
 
         if LINUX() && has("gui_running")
-            set guifont=Inconsolata-dz\ for\ Powerline\ 11,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 11,Consolas\ Regular\ 12,Courier\ New\ Regular\ 14
+            set guifont=InconsolataGo\ Nerd\ Font\ Mono\ Regular\ 13,Andale\ Mono\ Regular\ 12,Menlo\ Regular\ 11,Consolas\ Regular\ 12,Courier\ New\ Regular\ 14
         elseif OSX() && has("gui_running")
-            set guifont=Inconsolata-dz\ for\ Powerline:h11,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
+            set guifont=InconsolataGo\ Nerd\ Font\ Mono\ Regular:h13,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
         elseif WINDOWS() && has("gui_running")
-            set guifont=Inconsolata-dz_for_Powerline:h11,Andale_Mono:h11,Menlo:h11,Consolas:h11,Courier_New:h11
+            set guifont=InconsolataGo_Nerd_Font_Mono_Regular:h13,Andale_Mono:h11,Menlo:h11,Consolas:h11,Courier_New:h11
         endif
     else
         if &term == 'xterm' || &term == 'screen'
