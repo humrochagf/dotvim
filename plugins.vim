@@ -17,36 +17,36 @@ call plug#begin('~/.vim/plugged')
 " Bundles {
 
     " Visual and Cosmetics {
-        Plug 'flazz/vim-colorschemes'
-        Plug 'oblitum/rainbow'
-        Plug 'gorodinskiy/vim-coloresque'
         Plug 'Yggdroot/indentLine'
+        Plug 'flazz/vim-colorschemes'
         Plug 'godlygeek/csapprox'
+        Plug 'gorodinskiy/vim-coloresque'
+        Plug 'oblitum/rainbow'
     " }
 
     " Interface and Navigation {
         Plug 'itchyny/lightline.vim'
-        Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeTabsToggle' }
         Plug 'jistr/vim-nerdtree-tabs'
         Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+        Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeTabsToggle' }
     " }
 
     " Utility {
-        Plug 'sheerun/vim-polyglot'
-        Plug 'jiangmiao/auto-pairs'
-        Plug 'terryma/vim-multiple-cursors'
-        Plug 'scrooloose/nerdcommenter'
         Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+        Plug 'VincentCordobes/vim-translate'
+        Plug 'jiangmiao/auto-pairs'
+        Plug 'scrooloose/nerdcommenter'
+        Plug 'sheerun/vim-polyglot'
     " }
 
     " Git {
-        Plug 'tpope/vim-fugitive'
         Plug 'mhinz/vim-signify'
+        Plug 'tpope/vim-fugitive'
     " }
 
     " Code Completion {
-        Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
         Plug 'SirVer/ultisnips'
+        Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
         Plug 'honza/vim-snippets'
     " }
 
@@ -55,8 +55,8 @@ call plug#begin('~/.vim/plugged')
     " }
 
     " Python {
-        Plug 'jmcantrell/vim-virtualenv'
         Plug 'fisadev/vim-isort', { 'for': 'python' }
+        Plug 'jmcantrell/vim-virtualenv'
     " }
 
     " Elm {
@@ -64,8 +64,8 @@ call plug#begin('~/.vim/plugged')
     " }
 
     " TypeScript/Angular {
-        Plug 'Quramy/vim-js-pretty-template', { 'for': 'typescript' }
         Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
+        Plug 'Quramy/vim-js-pretty-template', { 'for': 'typescript' }
     " }
 
     " HTML {

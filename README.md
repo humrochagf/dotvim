@@ -21,36 +21,36 @@ That is the list of plugins used on my config.
 
 ### Visual and Cosmetics
 
-* [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes) - The ultimate colorscheme pack.
-* [oblitum/rainbow](https://github.com/oblitum/rainbow) - Color alternation on nested parenthesis.
-* [gorodinskiy/vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) - Color preview on color codes.
 * [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine) - Visual indentation indication.
+* [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes) - The ultimate colorscheme pack.
 * [godlygeek/csapprox](https://github.com/godlygeek/csapprox) - Color normalization between terminal and gui.
+* [gorodinskiy/vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) - Color preview on color codes.
+* [oblitum/rainbow](https://github.com/oblitum/rainbow) - Color alternation on nested parenthesis.
 
 ### Interface and Navigation
 
 * [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) - Lightweigth status bar.
-* [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) - File tree explorer.
 * [jistr/vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs) - Make NERDTree independent of tabs.
 * [majutsushi/tagbar](https://github.com/majutsushi/tagbar) - A class outline viewer.
+* [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) - File tree explorer.
 
 ### Utility
 
-* [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) - Language improvements.
-* [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Auto-close matching surroundings.
-* [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) - True Sublime Text style multiple selections for Vim.
-* [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Easy comments handling.
 * [Shougo/vimproc](https://github.com/Shougo/vimproc) - Interactive command execution in Vim.
+* [VincentCordobes/vim-translate](https://github.com/vincentcordobes/vim-translate) - Translation support inside vim.
+* [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Auto-close matching surroundings.
+* [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Easy comments handling.
+* [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) - Language improvements.
 
 ### Git
 
-* [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) - Git commands inside vim.
 * [mhinz/vim-signify](https://github.com/mhinz/vim-signify) - Git meaningful alteration indicators.
+* [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) - Git commands inside vim.
 
 ### Code Completion
 
-* [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Powerful code completion.
 * [SirVer/ultisnips](https://github.com/SirVer/ultisnips) - Code snippets tool.
+* [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Powerful code completion.
 * [honza/vim-snippets](https://github.com/honza/vim-snippets) - Snippets packages.
 
 ### Lint
@@ -59,8 +59,8 @@ That is the list of plugins used on my config.
 
 ### Python
 
-* [jmcantrell/vim-virtualenv](https://github.com/jmcantrell/vim-virtualenv) - Virtualenv handler.
 * [fisadev/vim-isort](https://github.com/fisadev/vim-isort) - Python Import sorting
+* [jmcantrell/vim-virtualenv](https://github.com/jmcantrell/vim-virtualenv) - Virtualenv handler.
 
 ### Elm
 
@@ -68,8 +68,8 @@ That is the list of plugins used on my config.
 
 ### TypeScript/Angular
 
-* [Quramy/vim-js-pretty-template](https://github.com/Quramy/vim-js-pretty-template) - Highlights JavaScript's Template Strings in other FileType syntax rule.
 * [Quramy/tsuquyomi](https://github.com/Quramy/tsuquyomi) - Make your Vim a TypeScript IDE.
+* [Quramy/vim-js-pretty-template](https://github.com/Quramy/vim-js-pretty-template) - Highlights JavaScript's Template Strings in other FileType syntax rule.
 
 ### HTML
 
@@ -81,7 +81,7 @@ That is the list of plugins used on my config.
 
 ## Plugin Installation / Requirements
 
-* [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) Requires font patching.
-* [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) and [mhinz/vim-signify](https://github.com/mhinz/vim-signify) Requires Git to be installed.
 * [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) Requires plugin compilation.
 * [fisadev/vim-isort](https://github.com/fisadev/vim-isort) Requires isort from pip.
+* [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) Requires font patching.
+* [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) and [mhinz/vim-signify](https://github.com/mhinz/vim-signify) Requires Git to be installed.
