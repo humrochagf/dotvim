@@ -80,7 +80,7 @@
 
     " Bind nohl
     " Removes highlight of your last search
-    noremap <Leader>/ :nohl<CR>
+    noremap <Leader><space> :nohlsearch<CR>
 
     " easier moving between tabs
     map <Leader>h <esc>:tabprevious<CR>
