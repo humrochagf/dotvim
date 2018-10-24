@@ -68,9 +68,9 @@
     nmap <leader>f9 :set foldlevel=9<CR>
 
     " Toggle en spell
-    nnoremap <silent> <leader>se :setlocal spell! spelllang=en<CR>
+    nnoremap <silent> <leader>se :setlocal spell! spelllang=en_us<CR>
     " Toggle pt spell
-    nnoremap <silent> <leader>sp :setlocal spell! spelllang=pt<CR>
+    nnoremap <silent> <leader>sp :setlocal spell! spelllang=pt_br<CR>
 
     " Quicksave command
     noremap <Leader>w :update<CR>
