@@ -71,6 +71,8 @@
     nnoremap <silent> <leader>se :setlocal spell! spelllang=en_us<CR>
     " Toggle pt spell
     nnoremap <silent> <leader>sp :setlocal spell! spelllang=pt_br<CR>
+    " Toggle fr spell
+    nnoremap <silent> <leader>sf :setlocal spell! spelllang=fr<CR>
 
     " Quicksave command
     noremap <Leader>w :update<CR>
