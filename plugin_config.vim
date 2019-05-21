@@ -100,7 +100,7 @@
 
 " vim-js-pretty-template {
 
-    autocmd FileType typescript JsPreTmpl html
+    autocmd FileType typescript JsPreTmpl
     autocmd FileType typescript syn clear foldBraces
 
 " }
