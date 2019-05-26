@@ -84,10 +84,6 @@
     " Removes highlight of your last search
     noremap <Leader><space> :nohlsearch<CR>
 
-    " easier moving between tabs
-    map <Leader>h <esc>:tabprevious<CR>
-    map <Leader>l <esc>:tabnext<CR>
-
     " map sort function to a key
     " awesome on ordering imports on python
     vnoremap <Leader>ss :sort<CR>
@@ -103,6 +99,9 @@
 
     " remove trailing whitespaces
     noremap <Leader>sd :call StripTrailingWhitespace()<CR>
+
+    " toggle line fold
+    noremap <Leader>lf :call ToggleLineFold()<CR>
 
     " Some helpers to edit mode
     " http://vimcasts.org/e/14

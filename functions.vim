@@ -2,6 +2,12 @@
 " Vim Functions
 " -------------
 
+" LineFold {
+    function! ToggleLineFold()
+        :set wrap!
+    endfunction
+" }
+
 " Strip whitespace {
     function! StripTrailingWhitespace()
         " Preparation: save last search, and cursor position.
