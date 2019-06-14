@@ -128,3 +128,11 @@
     inoremap ! !<C-g>u
     inoremap , ,<C-g>u
 " }
+
+" prevent typo {
+    iabbrev lenght length
+    iabbrev widht width
+
+    iabbrev heigth height
+    iabbrev rigth right
+" }
