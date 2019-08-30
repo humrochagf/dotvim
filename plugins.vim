@@ -31,6 +31,10 @@ call plug#begin('~/.vim/plugged')
         Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeTabsToggle' }
     " }
 
+    " Elm {
+        Plug 'elmcast/elm-vim'
+    " }
+
     " Utility {
         Plug 'Shougo/vimproc.vim', {'do' : 'make'}
         Plug 'VincentCordobes/vim-translate'
@@ -57,10 +61,6 @@ call plug#begin('~/.vim/plugged')
     " Python {
         Plug 'fisadev/vim-isort', { 'for': 'python' }
         Plug 'jmcantrell/vim-virtualenv'
-    " }
-
-    " Elm {
-        Plug 'elmcast/elm-vim', { 'for': 'elm' }
     " }
 
     " TypeScript/Angular {

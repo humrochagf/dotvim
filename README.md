@@ -85,3 +85,4 @@ That is the list of plugins used on my config.
 * [fisadev/vim-isort](https://github.com/fisadev/vim-isort) Requires isort from pip.
 * [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) Requires font patching.
 * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) and [mhinz/vim-signify](https://github.com/mhinz/vim-signify) Requires Git to be installed.
+* [lambdatoast/elm.vim](https://github.com/lambdatoast/elm.vim) - Requires Elm and its tools, you can install by running `npm install -g elm elm-test elm-oracle elm-format`
