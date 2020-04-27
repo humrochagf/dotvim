@@ -31,10 +31,6 @@ call plug#begin('~/.vim/plugged')
         Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeTabsToggle' }
     " }
 
-    " Elm {
-        Plug 'elmcast/elm-vim'
-    " }
-
     " Utility {
         Plug 'Shougo/vimproc.vim', {'do' : 'make'}
         Plug 'VincentCordobes/vim-translate'
@@ -63,6 +59,10 @@ call plug#begin('~/.vim/plugged')
         Plug 'jmcantrell/vim-virtualenv'
     " }
 
+    " Elm {
+        Plug 'elmcast/elm-vim', { 'for': 'elm' }
+    " }
+
     " TypeScript/Angular {
         Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
         Plug 'Quramy/vim-js-pretty-template', { 'for': 'typescript' }
@@ -72,8 +72,8 @@ call plug#begin('~/.vim/plugged')
         Plug 'mattn/emmet-vim', { 'for': ['html', 'jinja', 'htmldjango'] }
     " }
 
-    " Metrics {
-        Plug 'wakatime/vim-wakatime'
+    " Markdown {
+        Plug 'suan/vim-instant-markdown', { 'for': 'markdown' }
     " }
 " }
 

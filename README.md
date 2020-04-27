@@ -75,9 +75,9 @@ That is the list of plugins used on my config.
 
 * [mattn/emmet-vim](https://github.com/mattn/emmet-vim) - Zencoding plugin.
 
-### Metrics
+### Markdown
 
-* [wakatime/vim-wakatime](https://github.com/wakatime/vim-wakatime) - Coding performance metrics.
+* [suan/vim-instant-markdown](https://github.com/suan/vim-instant-markdown) - Markdown preview tool
 
 ## Plugin Installation / Requirements
 
