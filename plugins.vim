@@ -63,6 +63,10 @@ call plug#begin('~/.vim/plugged')
         Plug 'elmcast/elm-vim', { 'for': 'elm' }
     " }
 
+    " Rust {
+        Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+    " }
+
     " TypeScript/Angular {
         Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
         Plug 'Quramy/vim-js-pretty-template', { 'for': 'typescript' }

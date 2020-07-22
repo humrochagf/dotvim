@@ -66,6 +66,10 @@ That is the list of plugins used on my config.
 
 * [lambdatoast/elm.vim](https://github.com/lambdatoast/elm.vim) - Elm code highlighting and utility
 
+### Rust
+
+* [rust-lang/rust.vim](https://github.com/rust-lang/rust.vim) - Rust code highlighting and utility
+
 ### TypeScript/Angular
 
 * [Quramy/tsuquyomi](https://github.com/Quramy/tsuquyomi) - Make your Vim a TypeScript IDE.

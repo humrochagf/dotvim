@@ -140,3 +140,9 @@
     let g:polyglot_disabled = ['elm']
 
 " }
+
+" instand-markdown-d {
+
+    let g:instant_markdown_autostart = 0
+
+" }
