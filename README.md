@@ -6,7 +6,7 @@ The plugins are managed by [VIM-Plug](https://github.com/junegunn/vim-plug).
 
 ## Installation
 
-1. Clone the repo with `git clone https://github.com/humrochagf/dotvim ~/.vim`
+1. Clone the repo with `git clone git@github.com:humrochagf/dotvim.git ~/.vim`
 2. `cd ~/.vim`
 3. `ln -s ~/.vim/vimrc ~/.vimrc` to make the .vimrc link on your home.
 4. Install [VIM-Plug](https://github.com/junegunn/vim-plug) with `curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
