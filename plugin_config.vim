@@ -137,9 +137,3 @@
     let g:vim_markdown_conceal_code_blocks = 0
 
 " }
-
-" instand-markdown-d {
-
-    let g:instant_markdown_autostart = 0
-
-" }

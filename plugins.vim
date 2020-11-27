@@ -75,10 +75,6 @@ call plug#begin('~/.vim/plugged')
     " HTML {
         Plug 'mattn/emmet-vim', { 'for': ['html', 'jinja', 'htmldjango'] }
     " }
-
-    " Markdown {
-        Plug 'suan/vim-instant-markdown', { 'for': 'markdown' }
-    " }
 " }
 
 call plug#end()
