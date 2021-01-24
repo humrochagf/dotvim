@@ -49,7 +49,7 @@
     highlight clear SignColumn      " SignColumn should match background
     highlight clear LineNr          " Current line number row will have same background color in relative mode
 
-    set colorcolumn=89              " Color the 89th column differently as a wrapping guide.
+    set colorcolumn=80              " Color the 80th column differently as a wrapping guide.
     set tabpagemax=15               " Only show 15 tabs
     set showmode                    " Display the current mode
     set backspace=indent,eol,start  " Backspace for dummies
