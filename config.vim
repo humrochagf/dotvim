@@ -94,7 +94,7 @@
         elseif OSX() && has("gui_running")
             set guifont=InconsolataGo\ Nerd\ Font\ Mono\ Regular:h13,Andale\ Mono\ Regular:h12,Menlo\ Regular:h11,Consolas\ Regular:h12,Courier\ New\ Regular:h14
         elseif WINDOWS() && has("gui_running")
-            set guifont=InconsolataGo_Nerd_Font_Mono_Regular:h13,Andale_Mono:h11,Menlo:h11,Consolas:h11,Courier_New:h11
+            set guifont=InconsolataGo\ NF:h13,Andale_Mono:h11,Menlo:h11,Consolas:h11,Courier_New:h11
         endif
     else
         if &term == 'xterm' || &term == 'screen'
