@@ -62,10 +62,10 @@
 " UI {
 
     set t_Co=256
+    set termguicolors
     set background=dark
 
-    let g:dracula_colorterm = 0
-    colorscheme dracula
+    colorscheme ir_black
 
     highlight clear SignColumn      " SignColumn should match background
     highlight clear LineNr          " Current line number row will have same background color in relative mode
