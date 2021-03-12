@@ -18,10 +18,7 @@ call plug#begin('~/.vim/plugged')
 
     " Visual and Cosmetics {
         Plug 'Yggdroot/indentLine'
-        Plug 'flazz/vim-colorschemes'
-        if LINUX() || OSX()
-            Plug 'godlygeek/csapprox'
-        endif
+        Plug 'dracula/vim', { 'as': 'dracula' }
         Plug 'gorodinskiy/vim-coloresque'
         Plug 'oblitum/rainbow'
     " }
