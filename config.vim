@@ -69,6 +69,9 @@
 
     set background=dark
 
+    " Use same background from the terminal
+    highlight Normal ctermbg=None
+
     let g:dracula_colorterm = 0
     colorscheme dracula
 
