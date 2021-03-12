@@ -45,7 +45,6 @@
 
     " GVIM- (here instead of .gvimrc)
     if has('gui_running')
-        set termguicolors
         set guioptions-=T           " Remove the toolbar
         set lines=40                " 40 lines of text instead of 24
 
@@ -56,21 +55,14 @@
         elseif WINDOWS() && has("gui_running")
             set guifont=InconsolataGo\ NF:h13,Andale_Mono:h11,Menlo:h11,Consolas:h11,Courier_New:h11
         endif
-    else
-        if &term == 'xterm' || &term == 'screen'
-            set t_Co=256            " Enable 256 colors to stop the CSApprox warning and make xterm vim shine
-        endif
-        "set term=builtin_ansi       " Make arrow and other keys work
     endif
 
 " }
 
 " UI {
 
+    set t_Co=256
     set background=dark
-
-    " Use same background from the terminal
-    highlight Normal ctermbg=None
 
     let g:dracula_colorterm = 0
     colorscheme dracula
