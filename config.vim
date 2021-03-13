@@ -65,7 +65,8 @@
     set termguicolors
     set background=dark
 
-    colorscheme ir_black
+    let g:gruvbox_italic=1
+    colorscheme gruvbox
 
     highlight clear SignColumn      " SignColumn should match background
     highlight clear LineNr          " Current line number row will have same background color in relative mode

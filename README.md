@@ -22,10 +22,8 @@ That is the list of plugins used on my config.
 ### Visual and Cosmetics
 
 * [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine) - Visual indentation indication.
-* [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes) - The ultimate colorscheme pack.
-* [godlygeek/csapprox](https://github.com/godlygeek/csapprox) - Color normalization between terminal and gui.
+* [morhetz/gruvbox](https://github.com/morhetz/gruvbox) - Gruvbox color scheme.
 * [gorodinskiy/vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) - Color preview on color codes.
-* [oblitum/rainbow](https://github.com/oblitum/rainbow) - Color alternation on nested parenthesis.
 
 ### Interface and Navigation
 
