@@ -22,12 +22,12 @@ That is the list of plugins used on my config.
 ### Visual and Cosmetics
 
 * [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine) - Visual indentation indication.
-* [morhetz/gruvbox](https://github.com/morhetz/gruvbox) - Gruvbox color scheme.
+* [lifepillar/vim-gruvbox8](https://github.com/lifepillar/vim-gruvbox8) - Gruvbox8 color scheme, performance optimized version of gruvbox.
 * [gorodinskiy/vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) - Color preview on color codes.
 
 ### Interface and Navigation
 
-* [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) - Lightweigth status bar.
+* [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) - Lightweight status bar.
 * [jistr/vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs) - Make NERDTree independent of tabs.
 * [majutsushi/tagbar](https://github.com/majutsushi/tagbar) - A class outline viewer.
 * [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) - File tree explorer.

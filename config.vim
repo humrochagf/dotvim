@@ -61,12 +61,10 @@
 
 " UI {
 
-    set t_Co=256
     set termguicolors
     set background=dark
 
-    let g:gruvbox_italic=1
-    colorscheme gruvbox
+    colorscheme gruvbox8
 
     highlight clear SignColumn      " SignColumn should match background
     highlight clear LineNr          " Current line number row will have same background color in relative mode

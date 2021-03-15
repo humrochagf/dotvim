@@ -18,7 +18,7 @@ call plug#begin('~/.vim/plugged')
 
     " Visual and Cosmetics {
         Plug 'Yggdroot/indentLine'
-        Plug 'morhetz/gruvbox'
+        Plug 'lifepillar/gruvbox8'
         Plug 'gorodinskiy/vim-coloresque'
     " }
 

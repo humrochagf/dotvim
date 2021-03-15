@@ -7,7 +7,7 @@
     set laststatus=2
 
     let g:lightline = {
-        \ 'colorscheme': 'gruvbox',
+        \ 'colorscheme': 'gruvbox8',
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ],
         \             [ 'virtualenv', 'filename', 'fugitive' ] ]
