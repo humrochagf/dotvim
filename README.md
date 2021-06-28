@@ -56,6 +56,10 @@ That is the list of plugins used on my config.
 
 * [w0rp/ale](https://github.com/w0rp/ale) - Asynchronous Lint Engine.
 
+### C/C++
+
+* [derekwyatt/vim-fswitch](https://github.com/derekwyatt/vim-fswitch) - Source/Header file quick switch.
+
 ### Python
 
 * [fisadev/vim-isort](https://github.com/fisadev/vim-isort) - Python Import sorting

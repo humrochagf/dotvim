@@ -53,6 +53,10 @@ call plug#begin('~/.vim/plugged')
         Plug 'w0rp/ale'
     " }
 
+    " C/C++ {
+        Plug 'derekwyatt/vim-fswitch'
+    " }
+
     " Python {
         Plug 'fisadev/vim-isort', { 'for': 'python' }
         Plug 'jmcantrell/vim-virtualenv'
