@@ -35,6 +35,7 @@ call plug#begin('~/.vim/plugged')
         Plug 'jiangmiao/auto-pairs'
         Plug 'scrooloose/nerdcommenter'
         Plug 'sheerun/vim-polyglot'
+        Plug 'mileszs/ack.vim'
     " }
 
     " Git {

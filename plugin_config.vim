@@ -129,3 +129,8 @@
     let g:vim_markdown_conceal_code_blocks = 0
 
 " }
+
+" ack {
+    " change ack to use ag the silver searcher
+    let g:ackprg = 'ag --nogroup --nocolor --column'
+" }
