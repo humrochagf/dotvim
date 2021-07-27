@@ -35,7 +35,8 @@ call plug#begin('~/.vim/plugged')
         Plug 'jiangmiao/auto-pairs'
         Plug 'scrooloose/nerdcommenter'
         Plug 'sheerun/vim-polyglot'
-        Plug 'mileszs/ack.vim'
+        Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+        Plug 'junegunn/fzf.vim'
     " }
 
     " Git {

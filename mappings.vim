@@ -107,14 +107,6 @@
     " toggle line fold
     noremap <Leader>lf :call ToggleLineFold()<CR>
 
-    " Some helpers to edit mode
-    " http://vimcasts.org/e/14
-    cnoremap %% <C-R>=expand('%:h').'/'<cr>
-    map <leader>ew :e %%
-    map <leader>es :sp %%
-    map <leader>ev :vsp %%
-    map <leader>et :tabe %%
-
     " Adjust viewports to the same size
     map <Leader>= <C-w>=
 

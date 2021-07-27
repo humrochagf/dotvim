@@ -79,7 +79,7 @@
 
 " TagBar {
 
-    nmap <C-t> :TagbarToggle<CR>
+    nnoremap <C-t> :TagbarToggle<CR>
 
 " }
 
@@ -130,7 +130,9 @@
 
 " }
 
-" ack {
-    " change ack to use ag the silver searcher
-    let g:ackprg = 'ag --nogroup --nocolor --column'
-" }
+"  fzf {
+
+    "  File finder
+    nnoremap <C-f> :Files<CR>
+
+"  }

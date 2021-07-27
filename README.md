@@ -39,7 +39,8 @@ That is the list of plugins used on my config.
 * [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Auto-close matching surroundings.
 * [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Easy comments handling.
 * [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) - Language improvements.
-* [mileszs/ack.vim](https://github.com/mileszs/ack.vim) - Ack/ag code search integration.
+* [junegunn/fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder.
+* [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) - Vim fzf integration.
 
 ### Git
 
@@ -89,4 +90,4 @@ That is the list of plugins used on my config.
 * [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) Requires font patching.
 * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) and [mhinz/vim-signify](https://github.com/mhinz/vim-signify) Requires Git to be installed.
 * [lambdatoast/elm.vim](https://github.com/lambdatoast/elm.vim) - Requires Elm and its tools, you can install by running `npm install -g elm elm-test elm-oracle elm-format`
-* [mileszs/ack.vim](https://github.com/mileszs/ack.vim) - With the current configuration requires [ag the silver searcher](https://github.com/ggreer/the_silver_searcher).
+* [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) - If you have [ag the silver searcher](https://github.com/ggreer/the_silver_searcher) installed it offers an utility tool for Ag search.
