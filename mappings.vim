@@ -85,8 +85,12 @@
     noremap <Leader><space> :nohlsearch<CR>
 
     " map sort function to a key
-    " awesome on ordering imports on python
+    " sort visual selected lines
     vnoremap <Leader>ss :sort<CR>
+    " sort visual selected line elements
+    vnoremap <Leader>ls :SortLine<CR>
+    " sort visual selected line elements separed by comma
+    vnoremap <Leader>lc :SortLineCommaSeparated<CR>
 
     " Improved copy/paste
     noremap <Leader>y "+y

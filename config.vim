@@ -102,7 +102,7 @@
 
 " }
 
-" Formatting {
+" Default Formatting {
 
     set nowrap                      " Do not wrap long lines
     set autoindent                  " Indent at the same level of the previous line
@@ -115,15 +115,23 @@
     set splitbelow                  " Puts new split windows to the bottom of the current
     set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
-    autocmd FileType c,cpp,css,django,elm,go,haskell,html,html5,htmldjango,java,javascript,json,perl,php,puppet,python,rust,sass,scss,stylus,twig,typescript,xml,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
-    autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
-    autocmd FileType markdown,css,django,haskell,html,html5,htmldjango,javascript,json,php,puppet,ruby,sass,scss,stylus,tex,typescript,xml,yml,toml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" }
 
+" Custom Formatting {
+
+    " File type changes
+    autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
     autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 
     " Workaround vim-commentary for Haskell
     autocmd FileType haskell setlocal commentstring=--\ %s
     " Workaround broken colour highlighting in Haskell
     autocmd FileType haskell,rust setlocal nospell
+
+    " File types with 2 spaces indentation
+    autocmd FileType css,django,haskell,html,html5,htmldjango,javascript,json,markdown,php,puppet,ruby,sass,scss,stylus,tex,toml,typescript,xml,yml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+
+    " Remove trailing white spaces on save
+    autocmd FileType c,cpp,cs,css,django,elm,go,haskell,html,html5,htmldjango,java,javascript,json,markdown,perl,php,puppet,python,rust,sass,scss,stylus,twig,typescript,vue,xml,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
 
 " }
