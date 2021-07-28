@@ -14,6 +14,13 @@
     set nowritebackup
     set noswapfile          " Disable swap
 
+    " Give more space for displaying messages.
+    set cmdheight=2
+
+    " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+    " delays and poor user experience.
+    set updatetime=300
+
     if has('clipboard')
         if has('unnamedplus')  " When possible use + register for copy-paste
             set clipboard=unnamed,unnamedplus
@@ -22,14 +29,15 @@
         endif
     endif
 
-    set shortmess+=filmnrxoOtT          " Abbrev. of messages (avoids 'hit enter')
+    set shortmess+=cfilmnrxoOtT         " Abbrev. of messages (avoids 'hit enter')
     set viewoptions=folds,options,cursor,unix,slash " Better Unix / Windows compatibility
     set virtualedit=onemore             " Allow for cursor beyond last character
     set history=1000                    " Store a ton of history (default is 20)
-    "set spell                           " Spell checking on
-    "set spelllang=pt,en
+
+    " Spellcheck
     au! BufNewFile,BufRead * let b:spell_language="brasileiro"
     let spell_language_list="brasileiro,american,castellano"
+
     set hidden                          " Allow buffer switching without saving
     set iskeyword-=.                    " '.' is an end of word designator
     set iskeyword-=#                    " '#' is an end of word designator
@@ -66,8 +74,15 @@
 
     colorscheme gruvbox8
 
-    highlight clear SignColumn      " SignColumn should match background
-    highlight clear LineNr          " Current line number row will have same background color in relative mode
+
+    " Always show the signcolumn, otherwise it would shift the text each time
+    " diagnostics appear/become resolved.
+    if has("nvim-0.5.0") || has("patch-8.1.1564")
+      " Recently vim can merge signcolumn and number column into one
+      set signcolumn=number
+    else
+      set signcolumn=yes
+    endif
 
     set colorcolumn=80              " Color the 80th column differently as a wrapping guide.
     set tabpagemax=15               " Only show 15 tabs

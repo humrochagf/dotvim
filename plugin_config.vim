@@ -41,36 +41,63 @@
 
 " }
 
-" YouCompleteMe {
+" Coc {
 
-    nnoremap <silent> <C-]> :YcmCompleter GoTo<CR>
-    let g:ycm_autoclose_preview_window_after_completion = 1
-    let g:ycm_autoclose_preview_window_after_insertion = 1
-    let g:ycm_key_list_select_completion = ['<TAB>']
-    let g:ycm_key_list_previous_completion = ['<S-TAB>']
-    let g:ycm_goto_buffer_command = 'horizontal-split'
-    let g:ycm_python_binary_path = 'python'
+    " use <c-space>for trigger completion
+    inoremap <silent><expr> <NUL> coc#refresh()
 
-    let g:ycm_semantic_triggers =  {
-      \   'c': ['->', '.'],
-      \   'objc': ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
-      \            're!\[.*\]\s'],
-      \   'ocaml': ['.', '#'],
-      \   'cpp,cuda,objcpp': ['->', '.', '::'],
-      \   'perl': ['->'],
-      \   'php': ['->', '::'],
-      \   'cs,d,elixir,go,groovy,java,javascript,julia,perl6,python,scala,typescript,vb': ['.'],
-      \   'ruby,rust': ['.', '::'],
-      \   'lua': ['.', ':'],
-      \   'erlang': [':'],
-      \ 'elm' : ['.'],
-      \ }
+    " use <tab> for trigger completion and navigate to the next complete item
+    function! s:check_back_space() abort
+        let col = col('.') - 1
+        return !col || getline('.')[col - 1]  =~ '\s'
+    endfunction
+
+    inoremap <silent><expr> <Tab>
+        \ pumvisible() ? "\<C-n>" :
+        \ <SID>check_back_space() ? "\<Tab>" :
+        \ coc#refresh()
+
+    " Tab navigation backwards
+    inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+    " Use `[g` and `]g` to navigate diagnostics
+    " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+    nmap <silent> [g <Plug>(coc-diagnostic-prev)
+    nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+    " GoTo code navigation.
+    nmap <silent> gd <Plug>(coc-definition)
+    nmap <silent> gy <Plug>(coc-type-definition)
+    nmap <silent> gi <Plug>(coc-implementation)
+    nmap <silent> gr <Plug>(coc-references)
+
+    " Use K to show documentation in preview window.
+    nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+    function! s:show_documentation()
+        if (index(['vim','help'], &filetype) >= 0)
+            execute 'h '.expand('<cword>')
+        elseif (coc#rpc#ready())
+            call CocActionAsync('doHover')
+        else
+            execute '!' . &keywordprg . " " . expand('<cword>')
+        endif
+    endfunction
+
+    " Highlight the symbol and its references when holding the cursor.
+    autocmd CursorHold * silent call CocActionAsync('highlight')
+
+    " Symbol renaming.
+    nmap <leader>rn <Plug>(coc-rename)
+
+    " Fix floating menu background
+    hi Pmenu guifg=#ebdbb2 guibg=#403a37 gui=NONE cterm=NONE
 
 " }
 
 " Ultisnips {
 
-    " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+    " Trigger configuration. Do not use <tab>
     let g:UltiSnipsExpandTrigger = "<C-o>"
     let g:UltiSnipsJumpForwardTrigger = "<C-b>"
     let g:UltiSnipsJumpBackwardTrigger = "<C-z>"
@@ -86,29 +113,6 @@
 " Vim Isort {
 
     let g:vim_isort_map = '<C-i>'
-
-" }
-
-" Elm-vim {
-
-    let g:elm_format_autosave = 1
-    let g:elm_setup_keybindings = 0
-
-" }
-
-" typescript-vim {
-
-    let g:typescript_compiler_binary = 'tsc'
-    let g:typescript_compiler_options = ''
-    autocmd QuickFixCmdPost [^l]* nested cwindow
-    autocmd QuickFixCmdPost    l* nested lwindow
-
-" }
-
-" vim-js-pretty-template {
-
-    autocmd FileType typescript JsPreTmpl
-    autocmd FileType typescript syn clear foldBraces
 
 " }
 

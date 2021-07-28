@@ -50,8 +50,8 @@ That is the list of plugins used on my config.
 ### Code Completion
 
 * [SirVer/ultisnips](https://github.com/SirVer/ultisnips) - Code snippets tool.
-* [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) - Powerful code completion.
 * [honza/vim-snippets](https://github.com/honza/vim-snippets) - Snippets packages.
+* [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) - Language server based code completion.
 
 ### Lint
 
@@ -61,23 +61,14 @@ That is the list of plugins used on my config.
 
 * [derekwyatt/vim-fswitch](https://github.com/derekwyatt/vim-fswitch) - Source/Header file quick switch.
 
+### C#
+
+* [OmniSharp/omnisharp-vim](https://github.com/OmniSharp/omnisharp-vim) - OmniSharp C# language server.
+
 ### Python
 
 * [fisadev/vim-isort](https://github.com/fisadev/vim-isort) - Python Import sorting
 * [jmcantrell/vim-virtualenv](https://github.com/jmcantrell/vim-virtualenv) - Virtualenv handler.
-
-### Elm
-
-* [lambdatoast/elm.vim](https://github.com/lambdatoast/elm.vim) - Elm code highlighting and utility
-
-### Rust
-
-* [rust-lang/rust.vim](https://github.com/rust-lang/rust.vim) - Rust code highlighting and utility
-
-### TypeScript/Angular
-
-* [Quramy/tsuquyomi](https://github.com/Quramy/tsuquyomi) - Make your Vim a TypeScript IDE.
-* [Quramy/vim-js-pretty-template](https://github.com/Quramy/vim-js-pretty-template) - Highlights JavaScript's Template Strings in other FileType syntax rule.
 
 ### HTML
 
@@ -85,9 +76,8 @@ That is the list of plugins used on my config.
 
 ## Plugin Installation / Requirements
 
-* [Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe) Requires plugin compilation.
-* [fisadev/vim-isort](https://github.com/fisadev/vim-isort) Requires isort from pip.
 * [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) Requires font patching.
+* [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) If you have [ag the silver searcher](https://github.com/ggreer/the_silver_searcher) installed it offers an utility tool for Ag search.
 * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) and [mhinz/vim-signify](https://github.com/mhinz/vim-signify) Requires Git to be installed.
-* [lambdatoast/elm.vim](https://github.com/lambdatoast/elm.vim) - Requires Elm and its tools, you can install by running `npm install -g elm elm-test elm-oracle elm-format`
-* [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) - If you have [ag the silver searcher](https://github.com/ggreer/the_silver_searcher) installed it offers an utility tool for Ag search.
+* [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) Requires node 12+ installed.
+* [fisadev/vim-isort](https://github.com/fisadev/vim-isort) Requires isort from pip.

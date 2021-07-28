@@ -55,18 +55,6 @@
 
 " Leader Mappings {
 
-    " Code folding options
-    nmap <leader>f0 :set foldlevel=0<CR>
-    nmap <leader>f1 :set foldlevel=1<CR>
-    nmap <leader>f2 :set foldlevel=2<CR>
-    nmap <leader>f3 :set foldlevel=3<CR>
-    nmap <leader>f4 :set foldlevel=4<CR>
-    nmap <leader>f5 :set foldlevel=5<CR>
-    nmap <leader>f6 :set foldlevel=6<CR>
-    nmap <leader>f7 :set foldlevel=7<CR>
-    nmap <leader>f8 :set foldlevel=8<CR>
-    nmap <leader>f9 :set foldlevel=9<CR>
-
     " Toggle en spell
     nnoremap <silent> <leader>se :setlocal spell! spelllang=en_us<CR>
     " Toggle pt spell
@@ -109,10 +97,6 @@
 
     " Adjust viewports to the same size
     map <Leader>= <C-w>=
-
-    " Map <Leader>ff to display all lines with keyword under cursor
-    " and ask which one to jump to
-    nmap <Leader>ff [I:let nr = input("Which one: ")<Bar>exe "normal " . nr ."[\t"<CR>
 
 " }
 

@@ -46,8 +46,8 @@ call plug#begin('~/.vim/plugged')
 
     " Code Completion {
         Plug 'SirVer/ultisnips'
-        Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
         Plug 'honza/vim-snippets'
+        Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " }
 
     " Lint {
@@ -58,22 +58,13 @@ call plug#begin('~/.vim/plugged')
         Plug 'derekwyatt/vim-fswitch'
     " }
 
+    " C# {
+        Plug 'OmniSharp/omnisharp-vim'
+    " }
+
     " Python {
         Plug 'fisadev/vim-isort', { 'for': 'python' }
         Plug 'jmcantrell/vim-virtualenv'
-    " }
-
-    " Elm {
-        Plug 'elmcast/elm-vim', { 'for': 'elm' }
-    " }
-
-    " Rust {
-        Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-    " }
-
-    " TypeScript/Angular {
-        Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
-        Plug 'Quramy/vim-js-pretty-template', { 'for': 'typescript' }
     " }
 
     " HTML {
