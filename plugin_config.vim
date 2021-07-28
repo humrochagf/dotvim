@@ -44,14 +44,10 @@
 " Coc {
 
     " use <c-space>for trigger completion
-    if has('nvim')
+    if has('nvim') || !LINUX()
         inoremap <silent><expr> <c-space> coc#refresh()
     else
-        if !LINUX()
-            inoremap <silent><expr> <c-@> coc#refresh()
-        else
-            inoremap <silent><expr> <NUL> coc#refresh()
-        endif
+        inoremap <silent><expr> <NUL> coc#refresh()
     endif
 
     " use <tab> for trigger completion and navigate to the next complete item
