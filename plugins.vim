@@ -51,7 +51,7 @@ call plug#begin('~/.vim/plugged')
     " }
 
     " Lint {
-        Plug 'w0rp/ale'
+        Plug 'dense-analysis/ale'
     " }
 
     " C/C++ {
