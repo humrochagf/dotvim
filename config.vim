@@ -144,9 +144,9 @@
     autocmd FileType haskell,rust setlocal nospell
 
     " File types with 2 spaces indentation
-    autocmd FileType css,django,haskell,html,html5,htmldjango,javascript,json,markdown,php,puppet,ruby,sass,scss,stylus,tex,toml,typescript,xml,yml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+    autocmd FileType css,django,haskell,html,html5,htmldjango,javascript,json,jsonc,markdown,php,puppet,ruby,sass,scss,stylus,tex,toml,typescript,xml,yml setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
     " Remove trailing white spaces on save
-    autocmd FileType c,cpp,cs,css,django,elm,go,haskell,html,html5,htmldjango,java,javascript,json,markdown,perl,php,puppet,python,rust,sass,scss,stylus,twig,typescript,vue,xml,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
+    autocmd FileType c,cpp,cs,css,django,elm,go,haskell,html,html5,htmldjango,java,javascript,json,jsonc,markdown,perl,php,puppet,python,rust,sass,scss,stylus,twig,typescript,vue,xml,yml autocmd BufWritePre <buffer> call StripTrailingWhitespace()
 
 " }
