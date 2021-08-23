@@ -71,6 +71,7 @@ That is the list of plugins used on my config.
 ### HTML
 
 * [mattn/emmet-vim](https://github.com/mattn/emmet-vim) - Zencoding plugin.
+* [lepture/vim-jinja](https://github.com/lepture/vim-jinja) - Syntax highlighting support for Jinja2 templates.
 
 ## Plugin Installation / Requirements
 
