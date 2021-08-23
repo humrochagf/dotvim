@@ -23,21 +23,19 @@ That is the list of plugins used on my config.
 
 * [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine) - Visual indentation indication.
 * [lifepillar/vim-gruvbox8](https://github.com/lifepillar/vim-gruvbox8) - Gruvbox8 color scheme, performance optimized version of gruvbox.
-* [gorodinskiy/vim-coloresque](https://github.com/gorodinskiy/vim-coloresque) - Color preview on color codes.
+* [gko/vim-coloresque](https://github.com/gko/vim-coloresque) - Color preview on color codes.
 
 ### Interface and Navigation
 
 * [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) - Lightweight status bar.
-* [jistr/vim-nerdtree-tabs](https://github.com/jistr/vim-nerdtree-tabs) - Make NERDTree independent of tabs.
-* [majutsushi/tagbar](https://github.com/majutsushi/tagbar) - A class outline viewer.
-* [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree) - File tree explorer.
+* [preservim/tagbar](https://github.com/preservim/tagbar) - A class outline viewer.
+* [preservim/nerdtree](https://github.com/preservim/nerdtree) - File tree explorer.
 
 ### Utility
 
 * [Shougo/vimproc](https://github.com/Shougo/vimproc) - Interactive command execution in Vim.
-* [VincentCordobes/vim-translate](https://github.com/vincentcordobes/vim-translate) - Translation support inside vim.
 * [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Auto-close matching surroundings.
-* [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter) - Easy comments handling.
+* [preservim/nerdcommenter](https://github.com/preservim/nerdcommenter) - Easy comments handling.
 * [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) - Language improvements.
 * [junegunn/fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder.
 * [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) - Vim fzf integration.
@@ -55,7 +53,7 @@ That is the list of plugins used on my config.
 
 ### Lint
 
-* [w0rp/ale](https://github.com/w0rp/ale) - Asynchronous Lint Engine.
+* [dense-analysis/ale](https://github.com/dense-analysis/ale) - Asynchronous Lint Engine.
 
 ### C/C++
 
@@ -79,5 +77,5 @@ That is the list of plugins used on my config.
 * [itchyny/lightline.vim](https://github.com/itchyny/lightline.vim) Requires font patching.
 * [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) If you have [ag the silver searcher](https://github.com/ggreer/the_silver_searcher) installed it offers an utility tool for Ag search.
 * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) and [mhinz/vim-signify](https://github.com/mhinz/vim-signify) Requires Git to be installed.
-* [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) Requires node 12+ installed.
+* [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) Requires node 12+ installed, and plugin specifics like ccls for c/c++ completion.
 * [fisadev/vim-isort](https://github.com/fisadev/vim-isort) Requires isort from pip.

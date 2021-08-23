@@ -28,7 +28,7 @@
 
 " NerdTree {
 
-    map <C-e> :NERDTreeTabsToggle<CR>
+    map <C-e> :NERDTreeToggle<CR>
 
     let NERDTreeShowBookmarks = 1
     let NERDTreeIgnore = ['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']

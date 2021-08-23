@@ -19,21 +19,19 @@ call plug#begin('~/.vim/plugged')
     " Visual and Cosmetics {
         Plug 'Yggdroot/indentLine'
         Plug 'lifepillar/gruvbox8'
-        Plug 'gorodinskiy/vim-coloresque'
+        Plug 'gko/vim-coloresque'
     " }
 
     " Interface and Navigation {
         Plug 'itchyny/lightline.vim'
-        Plug 'jistr/vim-nerdtree-tabs'
-        Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
-        Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeTabsToggle' }
+        Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
+        Plug 'preservim/nerdtree'
     " }
 
     " Utility {
         Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-        Plug 'VincentCordobes/vim-translate'
         Plug 'jiangmiao/auto-pairs'
-        Plug 'scrooloose/nerdcommenter'
+        Plug 'preservim/nerdcommenter'
         Plug 'sheerun/vim-polyglot'
         Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
         Plug 'junegunn/fzf.vim'
@@ -68,7 +66,7 @@ call plug#begin('~/.vim/plugged')
     " }
 
     " HTML {
-        Plug 'mattn/emmet-vim', { 'for': ['html', 'jinja', 'htmldjango'] }
+        Plug 'mattn/emmet-vim'
     " }
 " }
 
