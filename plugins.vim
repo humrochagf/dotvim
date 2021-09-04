@@ -33,8 +33,6 @@ call plug#begin('~/.vim/plugged')
         Plug 'jiangmiao/auto-pairs'
         Plug 'preservim/nerdcommenter'
         Plug 'sheerun/vim-polyglot'
-        Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-        Plug 'junegunn/fzf.vim'
     " }
 
     " Git {
@@ -68,6 +66,16 @@ call plug#begin('~/.vim/plugged')
     " HTML {
         Plug 'mattn/emmet-vim'
         Plug 'lepture/vim-jinja'
+    " }
+
+    " Vim vs Neovim pluggins {
+        if has('nvim')
+            Plug 'nvim-lua/plenary.nvim'
+            Plug 'nvim-telescope/telescope.nvim'
+        else
+            Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+            Plug 'junegunn/fzf.vim'
+        endif
     " }
 " }
 
