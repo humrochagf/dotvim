@@ -53,6 +53,8 @@
 
 " Coc {
 
+    autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
+
     " use <c-space>for trigger completion
     if has('nvim') || !LINUX()
         inoremap <silent><expr> <c-space> coc#refresh()
