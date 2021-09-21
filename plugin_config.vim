@@ -183,3 +183,8 @@
 
 " }
 
+" Presenting.vim
+
+    au FileType markdown let b:presenting_slide_separator = '\v(^|\n)\-{3,}'
+
+"

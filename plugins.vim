@@ -33,6 +33,7 @@ call plug#begin('~/.vim/plugged')
         Plug 'jiangmiao/auto-pairs'
         Plug 'preservim/nerdcommenter'
         Plug 'sheerun/vim-polyglot'
+        Plug 'sotte/presenting.vim'
     " }
 
     " Git {
