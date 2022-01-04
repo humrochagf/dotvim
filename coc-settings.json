@@ -1,4 +1,5 @@
 {
+  "diagnostic.displayByAle": true,
   "languageserver": {
     "ccls": {
       "command": "ccls",
@@ -6,7 +7,7 @@
       "filetypes": ["c", "cc", "cpp", "c++", "cuda", "objc", "objcpp"],
       "rootPatterns": [".ccls", "compile_commands.json"],
       "initializationOptions": {
-        "compilationDatabaseDirectory": "build",
+        "compilationDatabaseDirectory": "build/dist",
         "cache": {
           "directory": ".ccls-cache"
         },

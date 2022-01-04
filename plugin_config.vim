@@ -43,11 +43,7 @@
 
 " ALE {
 
-    let g:ale_cpp_ccls_init_options = {
-    \   'cache': {
-    \       'directory': '.ccls-cache/cache'
-    \   }
-    \ }
+    let g:ale_disable_lsp = 1
 
 " }
 
