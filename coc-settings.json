@@ -5,14 +5,14 @@
       "command": "ccls",
       "args": ["--log-file=/tmp/ccls.log", "-v=1"],
       "filetypes": ["c", "cc", "cpp", "c++", "cuda", "objc", "objcpp"],
-      "rootPatterns": [".ccls", "compile_commands.json"],
+      "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
       "initializationOptions": {
         "compilationDatabaseDirectory": "build/dist",
         "cache": {
-          "directory": ".ccls-cache"
+          "directory": "/tmp/ccls"
         },
-        "client": {
-          "snippetSupport": true
+        "clang": {
+          "extraArgs": ["-std=c++20"]
         }
       }
     },
