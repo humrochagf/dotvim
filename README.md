@@ -13,7 +13,11 @@ The plugins are managed by [VIM-Plug](https://github.com/junegunn/vim-plug).
 5. `vim +PlugInstall` to install all of the plugins.
 6. Enjoy!
 
-**Obs.:** With neovim point vimrc to .nvimrc, and for python support run `pip install neovim` on your system or virtualenv.
+### Neovim extra steps
+
+7. `ln -s ~/.vim/vimrc ~/.config/nvim/init.vim`
+8. `ln -s ~/.vim/coc-settings.json ~/.config/nvim/coc-settings.json`
+9. Install VIM-Plug with `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
 
 ## Plugin List
 
@@ -37,8 +41,6 @@ That is the list of plugins used on my config.
 * [jiangmiao/auto-pairs](https://github.com/jiangmiao/auto-pairs) - Auto-close matching surroundings.
 * [preservim/nerdcommenter](https://github.com/preservim/nerdcommenter) - Easy comments handling.
 * [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot) - Language improvements.
-* [junegunn/fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder.
-* [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) - Vim fzf integration.
 
 ### Git
 
@@ -72,6 +74,20 @@ That is the list of plugins used on my config.
 
 * [mattn/emmet-vim](https://github.com/mattn/emmet-vim) - Zencoding plugin.
 * [lepture/vim-jinja](https://github.com/lepture/vim-jinja) - Syntax highlighting support for Jinja2 templates.
+
+### Uxntal
+
+* [karolbelina/uxntal.vim](https://github.com/karolbelina/uxntal.vim) - Language support to Uxntal programming language.
+
+### Vim only
+
+* [junegunn/fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder.
+* [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) - Vim fzf integration.
+
+### Neovim only
+
+* [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Neovim plugin development tool.
+* [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Find, filter, picker tool for neovim.
 
 ## Plugin Installation / Requirements
 

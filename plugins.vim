@@ -69,6 +69,10 @@ call plug#begin('~/.vim/plugged')
         Plug 'lepture/vim-jinja'
     " }
 
+    " Uxntal {
+        Plug 'karolbelina/uxntal.vim'
+    " }
+
     " Vim vs Neovim pluggins {
         if has('nvim')
             Plug 'nvim-lua/plenary.nvim'
