@@ -88,6 +88,7 @@ That is the list of plugins used on my config.
 
 * [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Neovim plugin development tool.
 * [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Find, filter, picker tool for neovim.
+* [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Treesitter configurations and abstraction layer for Neovim.
 
 ## Plugin Installation / Requirements
 

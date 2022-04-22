@@ -77,6 +77,7 @@ call plug#begin('~/.vim/plugged')
         if has('nvim')
             Plug 'nvim-lua/plenary.nvim'
             Plug 'nvim-telescope/telescope.nvim'
+            Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
         else
             Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
             Plug 'junegunn/fzf.vim'
