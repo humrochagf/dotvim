@@ -124,7 +124,7 @@
 
 " Vim Isort {
 
-    let g:vim_isort_map = '<C-i>'
+    let g:vim_isort_map = '<C-s>'
 
 " }
 
@@ -179,8 +179,14 @@
 
 " }
 
-" Presenting.vim
+" Presenting.vim {
 
     au FileType markdown let b:presenting_slide_separator = '\v(^|\n)\-{3,}'
 
-"
+" }
+
+" IndentLine {
+
+    let g:vim_json_conceal = 0
+
+" }
