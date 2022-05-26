@@ -221,9 +221,6 @@
     " Fix floating menu background
     hi Pmenu guifg=#ebdbb2 guibg=#403a37 gui=NONE cterm=NONE
 
-    " python
-    autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
-
 " }
 
 " Ultisnips {
