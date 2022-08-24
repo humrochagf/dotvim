@@ -31,7 +31,7 @@
     map <C-e> :NERDTreeToggle<CR>
 
     let NERDTreeShowBookmarks = 1
-    let NERDTreeIgnore = ['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '^node_modules$']
+    let NERDTreeIgnore = ['\.py[cod]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '^node_modules$', '^__pycache__$', '^.mypy_cache$']
     let NERDTreeChDirMode = 0
     let NERDTreeQuitOnOpen = 1
     let NERDTreeMouseMode = 2
