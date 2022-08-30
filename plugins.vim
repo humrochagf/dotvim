@@ -66,7 +66,6 @@ call plug#begin('~/.vim/plugged')
 
     " HTML {
         Plug 'mattn/emmet-vim'
-        Plug 'lepture/vim-jinja'
     " }
 
     " Uxntal {

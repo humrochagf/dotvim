@@ -18,6 +18,8 @@ The plugins are managed by [VIM-Plug](https://github.com/junegunn/vim-plug).
 7. `ln -s ~/.vim/vimrc ~/.config/nvim/init.vim`
 8. `ln -s ~/.vim/coc-settings.json ~/.config/nvim/coc-settings.json`
 9. Install VIM-Plug with `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
+10. Intall npm neovim support cli with `npm install -g neovim`
+11. Launch neovim and run `:checkhealth` to verify if your providers are well configured.
 
 ## Plugin List
 
@@ -73,7 +75,6 @@ That is the list of plugins used on my config.
 ### HTML
 
 * [mattn/emmet-vim](https://github.com/mattn/emmet-vim) - Zencoding plugin.
-* [lepture/vim-jinja](https://github.com/lepture/vim-jinja) - Syntax highlighting support for Jinja2 templates.
 
 ### Uxntal
 
@@ -97,3 +98,4 @@ That is the list of plugins used on my config.
 * [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive) and [mhinz/vim-signify](https://github.com/mhinz/vim-signify) Requires Git to be installed.
 * [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) Requires node 12+ installed, and plugin specifics like ccls for c/c++ completion.
 * [fisadev/vim-isort](https://github.com/fisadev/vim-isort) Requires isort from pip.
+* [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) Requires it's cli `npm install -g tree-sitter-cli`
