@@ -45,6 +45,10 @@
 
     let g:ale_disable_lsp = 1
 
+    let g:ale_linters = {
+    \ 'cs': ['OmniSharp']
+    \}
+
 " }
 
 " Coc {
@@ -286,5 +290,44 @@
 " IndentLine {
 
     let g:vim_json_conceal = 0
+
+" }
+
+" OmniSharp {
+
+    let g:OmniSharp_server_use_net6 = 1
+    let g:OmniSharp_popup_position = 'peek'
+
+    if has('nvim')
+        let g:OmniSharp_popup_options = {
+        \ 'winblend': 30,
+        \ 'winhl': 'Normal:Normal,FloatBorder:ModeMsg',
+        \ 'border': 'rounded'
+        \}
+    else
+        let g:OmniSharp_popup_options = {
+        \ 'highlight': 'Normal',
+        \ 'padding': [0],
+        \ 'border': [1],
+        \ 'borderchars': ['─', '│', '─', '│', '╭', '╮', '╯', '╰'],
+        \ 'borderhighlight': ['ModeMsg']
+        \}
+    endif
+
+    let g:OmniSharp_popup_mappings = {
+    \ 'sigNext': '<C-n>',
+    \ 'sigPrev': '<C-p>',
+    \ 'pageDown': ['<C-f>', '<PageDown>'],
+    \ 'pageUp': ['<C-b>', '<PageUp>']
+    \}
+
+    " Override Coc in favor of OmniSharp in C# files
+    augroup omnisharp_commands
+      autocmd!
+
+      autocmd FileType cs nmap <silent> <buffer> gd <Plug>(omnisharp_go_to_definition)
+      autocmd FileType cs nnoremap <silent> <buffer> K <Plug>(omnisharp_documentation)
+      " ... other omnisharp-vim mappings
+    augroup END
 
 " }
