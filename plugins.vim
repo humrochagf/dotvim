@@ -18,7 +18,6 @@ call plug#begin('~/.vim/plugged')
 
     " Visual and Cosmetics {
         Plug 'Yggdroot/indentLine'
-        Plug 'lifepillar/gruvbox8'
         Plug 'gko/vim-coloresque'
     " }
 
@@ -74,10 +73,12 @@ call plug#begin('~/.vim/plugged')
 
     " Vim vs Neovim pluggins {
         if has('nvim')
+            Plug 'catppuccin/nvim',
             Plug 'nvim-lua/plenary.nvim'
             Plug 'nvim-telescope/telescope.nvim'
             Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
         else
+            Plug 'catppuccin/vim',
             Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
             Plug 'junegunn/fzf.vim'
         endif

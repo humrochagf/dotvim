@@ -70,10 +70,14 @@
 " UI {
 
     set termguicolors
-    set background=dark
 
-    colorscheme gruvbox8
-
+    if has('nvim')
+        " catppuccin-mocha, catppuccin-macchiato, catppuccin-frappe, catppuccin-latte
+        colorscheme catppuccin
+    else
+        " catppuccin_mocha, catppuccin_macchiato, catppuccin_frappe, catppuccin_latte
+        colorscheme catppuccin_mocha
+    endif
 
     " Always show the signcolumn, otherwise it would shift the text each time
     " diagnostics appear/become resolved.

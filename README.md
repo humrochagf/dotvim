@@ -28,7 +28,6 @@ That is the list of plugins used on my config.
 ### Visual and Cosmetics
 
 * [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine) - Visual indentation indication.
-* [lifepillar/vim-gruvbox8](https://github.com/lifepillar/vim-gruvbox8) - Gruvbox8 color scheme, performance optimized version of gruvbox.
 * [gko/vim-coloresque](https://github.com/gko/vim-coloresque) - Color preview on color codes.
 
 ### Interface and Navigation
@@ -69,7 +68,7 @@ That is the list of plugins used on my config.
 
 ### Python
 
-* [fisadev/vim-isort](https://github.com/fisadev/vim-isort) - Python Import sorting
+* [fisadev/vim-isort](https://github.com/fisadev/vim-isort) - Python Import sorting.
 * [jmcantrell/vim-virtualenv](https://github.com/jmcantrell/vim-virtualenv) - Virtualenv handler.
 
 ### HTML
@@ -82,11 +81,13 @@ That is the list of plugins used on my config.
 
 ### Vim only
 
+* [catppuccin/vim](https://github.com/catppuccin/vim) - Soothing pastel theme for Vim.
 * [junegunn/fzf](https://github.com/junegunn/fzf) - A command-line fuzzy finder.
 * [junegunn/fzf.vim](https://github.com/junegunn/fzf.vim) - Vim fzf integration.
 
 ### Neovim only
 
+* [catppuccin/nvim](https://github.com/catppuccin/nvim) - Soothing pastel theme for (Neo)vim.
 * [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Neovim plugin development tool.
 * [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Find, filter, picker tool for neovim.
 * [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - Treesitter configurations and abstraction layer for Neovim.

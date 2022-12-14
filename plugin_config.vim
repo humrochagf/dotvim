@@ -6,8 +6,14 @@
 
     set laststatus=2
 
+    if has('nvim')
+        let lightline_colorscheme = 'catppuccin'
+    else
+        let lightline_colorscheme = 'catppuccin_macchiato'
+    endif
+
     let g:lightline = {
-        \ 'colorscheme': 'gruvbox8',
+        \ 'colorscheme': lightline_colorscheme,
         \ 'active': {
         \   'left': [ [ 'mode', 'paste' ],
         \             [ 'virtualenv', 'filename', 'fugitive' ] ]
